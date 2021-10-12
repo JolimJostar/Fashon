@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="/MainStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Container">
+        <div class="HeaderFull" id="HeaderFull">
+            <div class="SearchBar">
+                <input type="text" class="HeaderSearchInput OpenSans">
+                <button id="SearchButton">
+                    <img src="/Img/Static/SeacrhIcon.svg" alt=""> 
+                </button>
+            </div>
+            <div class="Menu">
+                <button id="Account">
+                    <img src="/Img/Static/Account.svg" alt="">
+                </button>
+                <button id="Favorite" >
+                    <img src="/Img/Static/Favorite 77.svg" alt="">
+                </button>
+                <button class="CartHolder">
+                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                    <p id="CartCount">5</p>
+                </button>
+            </div>
+            <img id="Logo"src="/Img/Static/Logo.png" alt="">
+            <div class="NavigationUnfoldedLeft">
+                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                <a href="" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+            </div>
+            <div class="NavigationUnfoldedRight">
+                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                <a href="" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                <a href="" class="NavButton OpenSans"  >БЛОГ</a>
+            </div>
+        </div>
+        <div class="HeaderFolded" id="HeaderFolded">
+            <div class="SearchBar">
+                <input type="text" class="HeaderSearchInput OpenSans">
+                <button id="SearchButton">
+                    <img src="/Img/Static/SeacrhIcon.svg" alt=""> 
+                </button>
+            </div>
+            <div class="NavigationFolded OpenSans">
+                <a href="">ГЛАВНАЯ</a>
+                <a href="About.html">О НАС</a>
+                <a href="">КОЛЛЕКЦИИ</a>
+                <a href="Contacs.html">КОНТАКТЫ</a>
+                <a href="">ПАРТНЕРЫ</a>
+                <a href="">БЛОГ</a>
+            </div>
+            <div class="Menu">
+                <button id="Account">
+                    <img src="/Img/Static/Account.svg" alt="">
+                </button>
+                <button id="Favorite" >
+                    <img src="/Img/Static/Favorite 77.svg" alt="">
+                </button>
+                <button class="CartHolder">
+                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                    <p id="CartCount">5</p>
+                </button>
+            </div>
+        </div>
+        <div class="MainContentContakti">
+            <img class="ContaktiImg" src="Img/Static/Контакты Картинка.png" alt="">
+            <div class="FlexMain">
+                <div class="ContactiText OpenSans Weight300 Size18">
+                    Мы с радостью ответим на любые вопросы по телефону или по электронной почте abvgd@pochta.ru <br><br><br>  
+                    Если у вас есть вопросы где можно увидеть наши платья, воспользуйтесь нашим списком салонов партнеров. <br><br><br>  
+                    Если вам нужна помощь с онлайн-заказом, позвоните нашим консультантам по телефону:   +7 (921) 123 45 67 <br><br><br>  
+                    Поддержка по телефону - часы работы:   с 08:00 до 22:00 по МСК <br><br><br>         
+                    Есть вопросы по оплате? Пожалуйста, прочитайте раздел, либо свяжитесь с нами. <br><br><br>  
+                    Если у Вас остались вопросы, заполните пожалуйста форму. <br><br><br>  
+                </div>
+                <div class="LeftContactiPart">
+                    <div class="ZayavkaText TenorSans Weight400 Size24">
+                        Оставьте заявку на сотрудничество
+                    </div>
+                    <div class="ContactFormContakti">
+                        <div class="InputFields">
+                            <form action="">
+                                <div class="MainInputName FixContaktiName">
+                                    <p class="TenorSans Size18">Имя</p>
+                                    <input type="text">
+                                </div>
+                                <div class="MainInputPhone FixContaktiPhone">
+                                    <p class="TenorSans Size18">Телефон</p>
+                                    <input type="tel">
+                                </div>
+                                <div class="MainInputEmail FixContaktiGorod">
+                                    <p class="TenorSans Size18">Город</p>
+                                    <input type="email">
+                                </div>
+                                <div class="MainInputSite">
+                                    <p class="TenorSans Size18">Салон</p>
+                                    <input type="url">                            
+                                </div>
+                                <div class="MainInputMessage FixContaktiMessage">
+                                    <p class="TenorSans Size18">Сообщение</p>
+                                    <input type="text">
+                                </div>
+                                <div class="SubscribeToNews">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="html">
+                                        <label for="html"></label>
+                                      </div>
+                                    <p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
+                                </div>
+                                <input class="OpenSans Weight400 Size18" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
+        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="Footer">
+            <div class="FooterOnas OpenSans">
+                <h3>О&nbsp;КОМПАНИИ</h3>
+                <a href="">О&nbsp;нас</a>
+                <a href="">Коллекции</a>
+                <a href="">Партнеры</a>
+                <a href="">Контакты</a>
+            </div>
+            <div class="FooterHelp OpenSans">
+                <h3>ПОМОЩЬ</h3>
+                <a href="">Таблица&nbsp;размеров</a>
+                <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+                <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+            </div>
+            <div class="FooterDocs OpenSans">
+                <h3>СОГЛАШЕНИЯ</h3>
+                <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+                <a href="">Политика&nbsp;конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>
