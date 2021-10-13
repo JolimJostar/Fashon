@@ -975,20 +975,38 @@ button{
     padding-right: 135px;
     display: grid;
     column-gap: 98px;
+    row-gap: 140px;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 47px;
 }
-.ItemCard {
-}
+
 .ItemName {
     text-align: center;
     margin-top: 38px;
+    font-size: 25px;
+    letter-spacing: 0.185em;
+    text-transform: uppercase;
+    color: #362B23;
+    margin-bottom: 17px;
 }
 .ShowPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 .Price {
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.185em;
+    margin-right: 13px;
 }
 .ItemIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
+
 
 
 .Footer{
@@ -1053,4 +1071,8 @@ button{
 .Hide{
     opacity:0;
     top: -5px;
+}
+
+.Hidden{
+    display: none;
 }
