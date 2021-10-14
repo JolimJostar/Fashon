@@ -76,11 +76,11 @@
     </div>
     <div class="ChouseItemMainContent">
         <div class="Showcase">
-            <div class="MainPicture"><img src="" alt=""></div>
+            <div class="MainPicture"><img id="ExpandedImg" src="Img/Страница платья картинка 1.png" alt=""></div>
             <div class="ScrollPictures">
-                <div class="SPItself"><img src="" alt=""></div>
-                <div class="SPItself"><img src="" alt=""></div>
-                <div class="SPItself"><img src="" alt=""></div>
+                <div class="SPItself"><img src="Img/Страница платья картинка 1.png" alt="" onclick="ChangePic(this);"></div>
+                <div class="SPItself"><img src="Img/Страница платья картинка 2.png" alt="" onclick="ChangePic(this);"></div>
+                <div class="SPItself"><img src="Img/Страница платья картинка 3.png" alt="" onclick="ChangePic(this);"></div>
             </div>
         </div>
     </div>
@@ -106,5 +106,15 @@
     </footer>
     <script src="jquery.min.js"></script>
     <script src="Main.js"></script>
+    <script>
+        function ChangePic(img) {
+            // Get the expanded image
+            var expandImg = document.getElementById("ExpandedImg");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = img.src;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+    } 
+    </script>
 </body>
 </html>

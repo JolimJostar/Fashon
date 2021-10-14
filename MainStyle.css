@@ -1007,7 +1007,9 @@ button{
     gap: 20px;
 }
 
-
+.SPItself{
+    cursor: pointer;
+}
 
 .Footer{
     color: #FFFFFF;
