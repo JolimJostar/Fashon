@@ -1007,9 +1007,18 @@ button{
     gap: 20px;
 }
 
-.SPItself{
+.ChouseItemMainContent {
+}
+.Showcase {
+}
+.MainPicture {
+}
+.ScrollPictures {
+}
+.SPItself {
     cursor: pointer;
 }
+
 
 .Footer{
     color: #FFFFFF;
