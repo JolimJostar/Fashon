@@ -83,6 +83,34 @@
                 <div class="SPItself"><img src="Img/Страница платья картинка 3.png" alt="" onclick="ChangePic(this);"></div>
             </div>
         </div>
+        <div class="ItemBuy">
+            <div class="NamePrice">
+                <p class="IN">Дениз</p>
+                <p class="TP">28 000 руб</p>
+            </div>
+            <div class="CharacteristicDiv">
+                <div class="custom-select">
+                    <select>
+                      <option value="0">Белый</option>
+                      <option value="1">Белый</option>
+                      <option value="2">Красный</option>
+                      <option value="3">Синий</option>
+                    </select>
+                </div>
+                <div class="custom-select">
+                    <select>
+                      <option value="0">Выберите размер</option>
+                      <option value="1">s</option>
+                      <option value="2">m</option>
+                    </select>
+                </div>
+                <div class="SelectNumber">
+                    <button class="MinusArrow" onclick=""><&nbsp;</button>
+                    <p class="Count">0</p>
+                    <button class="PlusArrow">&nbsp;></button>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="Footer">
         <div class="FooterOnas OpenSans">
@@ -106,15 +134,6 @@
     </footer>
     <script src="jquery.min.js"></script>
     <script src="Main.js"></script>
-    <script>
-        function ChangePic(img) {
-            // Get the expanded image
-            var expandImg = document.getElementById("ExpandedImg");
-            // Use the same src in the expanded image as the image being clicked on from the grid
-            expandImg.src = img.src;
-            // Show the container element (hidden with CSS)
-            expandImg.parentElement.style.display = "block";
-    } 
-    </script>
+    <script src="CouseItem.js"></script>
 </body>
 </html>

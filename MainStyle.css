@@ -252,7 +252,7 @@ button{
     opacity: 0;
     transition: all 0.5s ease-in-out;
     background-color: white;
-    z-index: 99999;
+    z-index: -99999;
 }
 
 .NavigationFolded{
@@ -1008,19 +1008,92 @@ button{
 }
 
 .ChouseItemMainContent {
+    margin-bottom: 100px;
+    padding-left: 246px;
+    right: 151px;
+    display: flex;
 }
 .Showcase {
     width: 560px;
     height: 690px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 28px;
+    
 }
 .MainPicture {
+    width: 470px;
+    height: 690px;
 }
+
+.MainPicture > img{
+    width: 100%;
+    height: 100%;
+}
+
 .ScrollPictures {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 8px;
 }
 .SPItself {
     cursor: pointer;
+    width: 81px;
+    height: 121px;
 }
 
+.SPItself > img{
+    width: 100%;
+    height: 100%;
+}
+
+.custom-select {
+    width: 170px;
+    height: 41px;
+    position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.SelectNumber{
+    display: flex;
+}
 
 .Footer{
     color: #FFFFFF;
@@ -1079,11 +1152,13 @@ button{
 .Show{
     opacity:1;
     top: 0;
+    z-index: 99999999;
 }
 
 .Hide{
     opacity:0;
     top: -5px;
+    z-index: 0;
 }
 
 .Hidden{
