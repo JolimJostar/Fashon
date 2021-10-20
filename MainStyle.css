@@ -293,32 +293,27 @@ button{
 }
 
 .ProfileMain{
+    border-bottom: 2px solid #362B23;
+    border-top: 2px solid #362B23;
     position: relative;
     top: 105px;
     left: 231px;
     width: 970px;
     height: 305.75px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 17px 240px 54.75px 200px;
 }
-
-.BorderUp{
-    border: 0.5px solid #362B23
-}
-
 
 .Face{
     position: relative;
-    width: 226.1px;
-    height: 230px;
-    top: 17px;
-    left: 200px;
 }
 
 .Fio{
-    position: absolute;
-    width: 427px;
-    height: 166px;
-    left: 490px;
-    top: 81px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
 }
 
 .Fio h2{
