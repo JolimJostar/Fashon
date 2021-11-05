@@ -92,6 +92,10 @@ button{
     font-weight: 600;
 }
 
+.Size10{
+    font-size: 10px;
+}
+
 .Size12{
     font-size: 12px;
 }
@@ -360,33 +364,25 @@ button{
     top: 1254px;
 }
 
-.CollectionCardMain{
-    position: absolute;
-    top: 267px;
-    width: 200px;
-    height: 297px;
-    padding: 10px;
-    background-color: white;
+.CollectionMainCards{
+    position: relative;
+    top: -106px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.CollectionMainCards div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 
-.CollectionCardMain p{
-    letter-spacing: 0.185em;
-    margin-top: 24px;
-}
-
-.Collection1{
-    left: 190px;
-}
-
-.Collection2{
-    left: 491px;
-}
-
-.Collection3{
-    left: 792px;
+.CollectionMainCards div div{
+    width: 200px;
+    height: 255px;
+    border: 10px solid #fff;
 }
 
 #AllCollectionsButton{
@@ -570,6 +566,18 @@ button{
     position: relative;
     width: 1170px;
     height: 462px;
+    background-image: url(./Img/Static/Контакты\ Картинка.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 19px
+}
+
+.ContaktiImgText{
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 
 .FlexMain{
@@ -713,6 +721,10 @@ button{
     justify-content: space-between;
 }
 
+.AboutUsTextH1{
+    letter-spacing: 0.185em;
+}
+
 .AboutUsText p{
     line-height: 16px;
     letter-spacing: 0.185em;
@@ -804,12 +816,13 @@ button{
     top: 107px;
     line-height: 42px;
     font-weight: normal;
+    letter-spacing: 0.185em;
 }
 
 .DostupKCenam img{
     position: absolute;
     top: 45px;
-    right: 134px;
+    right: 0;
     width: 565px;
     height: 353px;
 }
@@ -845,7 +858,6 @@ button{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     color: #362B23;
-
 }
 
 .MainContentContacti {
@@ -1093,8 +1105,39 @@ button{
     font-size: 10px;
     line-height: 14px;
     letter-spacing: 0.185em;
-text-decoration-line: underline;
-text-transform: capitalize;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+.HIMore{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+
+.LittleLine{
+    height: 1px;
+    width: 13px;
+    background-color: #4F4040;
+}
+
+.Opisanie{
+    margin-top: 42px;
+    width: 366px;
+    line-height: 16px;
+    letter-spacing: 0.185em;
+}
+
+.OMain{
+
+}
+
+.OList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 ul {
@@ -1136,6 +1179,7 @@ ul {
     height: 41px;
     position: relative;
     color: #362B23; 
+    cursor: pointer;
 }
 
 .custom-select select {
