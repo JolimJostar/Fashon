@@ -436,6 +436,10 @@ button{
     background: rgba(219, 202, 209, 0.43);
 }
 
+.PaddindImputField{
+    padding: 25px 28px;
+}
+
 .InputFields{
     display: flex;
     flex-wrap: wrap;

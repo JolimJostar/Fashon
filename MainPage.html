@@ -44,7 +44,7 @@
             <div class="NavigationUnfoldedRight">
                 <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
                 <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="" class="NavButton OpenSans"  >БЛОГ</a>
+                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
             </div>
         </div>
         <div class="HeaderFolded" id="HeaderFolded">
@@ -57,10 +57,10 @@
             <div class="NavigationFolded OpenSans">
                 <a href="MainPage.html">ГЛАВНАЯ</a>
                 <a href="About.html">О НАС</a>
-                <a href="">КОЛЛЕКЦИИ</a>
+                <a href="Collections.html">КОЛЛЕКЦИИ</a>
                 <a href="Contacs.html">КОНТАКТЫ</a>
                 <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="">БЛОГ</a>
+                <a href="Blog.html">БЛОГ</a>
             </div>
             <div class="Menu">
                 <button id="Account">
@@ -112,37 +112,42 @@
                 <h3 class="TenorSans Weight400 Size24">Оставьте заявку на сотрудничество</h3>
                 <img class="ContactFormMainImg" src="Img/Заявка на глав странице Фото.png" alt="">
                 <div class="ContactFormMain">
-                    <div class="InputFields">
+                    <div class="PaddindImputField">
                         <form action="">
-                            <div class="MainInputName">
-                                <p class="TenorSans Size18">Имя</p>
-                                <input type="text">
+                            <div  class="InputFields">
+                                <div class="MainInputName FixContaktiName">
+                                    <p class="TenorSans Size18">Имя</p>
+                                    <input type="text">
+                                </div>
+                                <div class="MainInputPhone FixContaktiPhone">
+                                    <p class="TenorSans Size18">Телефон</p>
+                                    <input type="tel">
+                                </div>
+                                <div class="MainInputEmail FixContaktiGorod">
+                                    <p class="TenorSans Size18">Город</p>
+                                    <input type="email">
+                                </div>
+                                <div class="MainInputSite">
+                                    <p class="TenorSans Size18">Салон</p>
+                                    <input type="url">                            
+                                </div>
+                                <div class="MainInputMessage FixContaktiMessage">
+                                    <p class="TenorSans Size18">Сообщение</p>
+                                    <textarea name="" id=""></textarea>
+                                </div>
                             </div>
-                            <div class="MainInputPhone">
-                                <p class="TenorSans Size18">Телефон</p>
-                                <input type="tel">
+                            <div class="FlexSubscribeToNews">
+                                <div>
+                                    <div class="SubscribeToNews">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="html">
+                                            <label for="html"></label>
+                                          </div>
+                                        <p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
+                                    </div>
+                                    <input class="OpenSans Weight400 Size14" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
+                                </div>
                             </div>
-                            <div class="MainInputEmail">
-                                <p class="TenorSans Size18">Почта</p>
-                                <input type="email">
-                            </div>
-                            <div class="MainInputSite">
-                                <p class="TenorSans Size18">Сайт</p>
-                                <input type="url">                            
-                            </div>
-                            <div class="MainInputMessage">
-                                <p class="TenorSans Size18">Сообщение</p>
-                                <input type="text">
-                            </div>
-                            <div class="SubscribeToNews">
-                                <div class="form-group">
-                                    <input type="checkbox" id="html">
-                                    <label for="html"></label>
-                                  </div>
-                                <p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
-                            </div>
-                            <input class="OpenSans Weight400 Size18" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
-    
                         </form>
                     </div>
                 </div>
