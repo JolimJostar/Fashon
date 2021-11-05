@@ -20,6 +20,14 @@ input{
     padding: 0;
 }
 
+textarea{
+    border: 1px solid #362B23;
+    resize: none;
+    padding: 0;
+    width: 100%;
+    height: 92px;
+}
+
 input:focus{
     outline: none;
 }
@@ -293,32 +301,27 @@ button{
 }
 
 .ProfileMain{
+    border-bottom: 2px solid #362B23;
+    border-top: 2px solid #362B23;
     position: relative;
     top: 105px;
     left: 231px;
     width: 970px;
     height: 305.75px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 17px 240px 54.75px 200px;
 }
-
-.BorderUp{
-    border: 0.5px solid #362B23
-}
-
 
 .Face{
     position: relative;
-    width: 226.1px;
-    height: 230px;
-    top: 17px;
-    left: 200px;
 }
 
 .Fio{
-    position: absolute;
-    width: 427px;
-    height: 166px;
-    left: 490px;
-    top: 81px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
 }
 
 .Fio h2{
@@ -437,28 +440,24 @@ button{
     background: rgba(219, 202, 209, 0.43);
 }
 
+.InputFields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
 .MainInputName{
-    position: absolute;
-    left: 31px;
-    top: 23px;
+
 }
 
 .MainInputPhone{
-    position: absolute;
-    left: 315px;
-    top: 23px;
 }
 
 .MainInputEmail{
-    position: absolute;
-    left: 31px;
-    top: 125px;
 }
 
 .MainInputSite{
-    position: absolute;
-    left: 315px;
-    top: 125px;
 }
 
 .MainInputName input,
@@ -475,9 +474,8 @@ button{
 }
 
 .MainInputMessage{
-    position: absolute;
-    left: 31px;
-    top: 227px;
+    width: 528px;
+    height: 115px;
 }
 
 .MainInputMessage input{
@@ -530,13 +528,18 @@ button{
     transform: rotate(45deg);
   }
 
+.FlexSubscribeToNews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 22px;
+}
+
 .SubscribeToNews{
     display: flex;
-    position: absolute;
-    width: 264.34px;
     height: 22px;
-    left: 198px;
-    top: 364px;
+    margin-bottom: 33px
 }
 
 .SubscribeToNews input{
@@ -549,11 +552,8 @@ button{
 }
 
 #SubmitButton{
-    position: absolute;
     width: 170px;
     height: 43px;
-    left: 207px;
-    top: 408px;
     cursor: pointer;
     background: #AFC4C0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -577,6 +577,7 @@ button{
     top: 49px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .ContactiText{
@@ -588,9 +589,6 @@ button{
     border-bottom: solid  1px #AFC4C0;
 }
 
-.LeftContactiPart{
-    margin-left: 71px;
-}
 
 .ZayavkaText{
     position: relative;
@@ -604,7 +602,6 @@ button{
 
 .ContactFormContakti{
     width: 528.1px;
-    height: 443px;
     position: relative;
     top: 32px;
 }
