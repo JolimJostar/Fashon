@@ -24,16 +24,16 @@
                 </button>
             </div>
             <div class="Menu">
-                <button id="Account">
+                <a href="account.html" id="Account">
                     <img src="/Img/Static/Account.svg" alt="">
-                </button>
-                <button id="Favorite" >
+                </a>
+                <a href="favorite.html" id="Favorite" >
                     <img src="/Img/Static/Favorite 77.svg" alt="">
-                </button>
-                <button class="CartHolder">
+                </a>
+                <a href="cart.html" class="CartHolder">
                     <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                     <p id="CartCount">5</p>
-                </button>
+                </a>
             </div>
             <img id="Logo"src="/Img/Static/Logo.png" alt="">
             <div class="NavigationUnfoldedLeft">
@@ -63,16 +63,16 @@
                 <a href="Blog.html">БЛОГ</a>
             </div>
             <div class="Menu">
-                <button id="Account">
+                <a href="account.html" id="Account">
                     <img src="/Img/Static/Account.svg" alt="">
-                </button>
-                <button id="Favorite" >
+                </a>
+                <a href="favorite.html" id="Favorite" >
                     <img src="/Img/Static/Favorite 77.svg" alt="">
-                </button>
-                <button class="CartHolder">
+                </a>
+                <a href="cart.html" class="CartHolder">
                     <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                     <p id="CartCount">5</p>
-                </button>
+                </a>
             </div>
         </div>
         <div class="MainContent">
@@ -86,71 +86,79 @@
                 <div class="Fio">
                     <h2 class="OpenSans Weight400 Size24">Наталья Градова</h2>
                     <p class="OpenSans Weight300 Size24">Founder / Artdirector</p>
-                    <button class="OpenSans Weight400 Size14" id="FioButton">ПОДРОБНЕЕ</button>
+                    <a href="About.html" class="OpenSans Weight400 Size14 HrefBtn">ПОДРОБНЕЕ</a>
                 </div>
             </div>
             <div class="CollectionsMain">
-                <img src="/Img/Static/MainPageCollectionBackground.png" alt="">
                 <div class="CollectionMainCards">
                     <div>
-                        <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 1.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-                        <p class="TenorSans Weight400 Size24" id="CollectionName1">Лилиан</p>
+						<a href="Item.html">
+							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 1.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+							<p class="TenorSans Weight400 Size24" id="CollectionName1">Лилиан</p>
+                        </a>
                     </div>
                     <div>
-                        <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 2.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-                        <p class="TenorSans Weight400 Size24" id="CollectionName2">Милано</p>
+						<a href="Item.html">
+							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 2.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+							<p class="TenorSans Weight400 Size24" id="CollectionName2">Милано</p>
+                        </a>
                     </div>
                     <div>
-                        <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 3.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-                        <p class="TenorSans Weight400 Size24" id="CollectionName3">Рози</p>
+						<a href="Item.html">
+							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 3.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+							<p class="TenorSans Weight400 Size24" id="CollectionName3">Рози</p>
+                        </a>
                     </div>
                 </div>
-                <button class="OpenSans Weight400 Size14" id="AllCollectionsButton">ВСЕ КОЛЛЕКЦИИ</button>
+                <a href="Collections.html" class="OpenSans Weight400 Size14 HrefBtn">ВСЕ КОЛЛЕКЦИИ</a>
             </div>
             <div class="ContactsMain">
                 <div class="Break"></div>
                 <h3 class="TenorSans Weight400 Size24">Оставьте заявку на сотрудничество</h3>
-                <img class="ContactFormMainImg" src="Img/Заявка на глав странице Фото.png" alt="">
-                <div class="ContactFormMain">
-                    <div class="PaddindImputField">
-                        <form action="">
-                            <div  class="InputFields">
-                                <div class="MainInputName FixContaktiName">
-                                    <p class="TenorSans Size18">Имя</p>
-                                    <input type="text">
-                                </div>
-                                <div class="MainInputPhone FixContaktiPhone">
-                                    <p class="TenorSans Size18">Телефон</p>
-                                    <input type="tel">
-                                </div>
-                                <div class="MainInputEmail FixContaktiGorod">
-                                    <p class="TenorSans Size18">Город</p>
-                                    <input type="email">
-                                </div>
-                                <div class="MainInputSite">
-                                    <p class="TenorSans Size18">Салон</p>
-                                    <input type="url">                            
-                                </div>
-                                <div class="MainInputMessage FixContaktiMessage">
-                                    <p class="TenorSans Size18">Сообщение</p>
-                                    <textarea name="" id=""></textarea>
-                                </div>
-                            </div>
-                            <div class="FlexSubscribeToNews">
-                                <div>
-                                    <div class="SubscribeToNews">
-                                        <div class="form-group">
-                                            <input type="checkbox" id="html">
-                                            <label for="html"></label>
-                                          </div>
-                                        <p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
-                                    </div>
-                                    <input class="OpenSans Weight400 Size14" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="ContactFormMainWrap">
+					<img class="ContactFormMainImg" src="Img/Заявка на глав странице Фото.png" alt="">
+					<div class="ContactFormMain">
+						<div class="PaddindImputField">
+							<form action="">
+								<div  class="InputFields">
+									<div class="MainInputName FixContaktiName">
+										<p class="TenorSans Size18">Имя</p>
+										<input type="text">
+									</div>
+									<div class="MainInputPhone FixContaktiPhone">
+										<p class="TenorSans Size18">Телефон</p>
+										<input type="tel">
+									</div>
+									<div class="MainInputEmail FixContaktiGorod">
+										<p class="TenorSans Size18">Город</p>
+										<input type="email">
+									</div>
+									<div class="MainInputSite">
+										<p class="TenorSans Size18">Салон</p>
+										<input type="url">                            
+									</div>
+									<div class="MainInputMessage FixContaktiMessage">
+										<p class="TenorSans Size18">Сообщение</p>
+										<textarea name="" id=""></textarea>
+									</div>
+								</div>
+								<div class="FlexSubscribeToNews">
+									<div>
+										<div class="SubscribeToNews">
+											<div class="form-group">
+												<input type="checkbox" id="html">
+												<label for="html"></label>
+											  </div>
+											<p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
+										</div>
+										<input class="OpenSans Weight400 Size14" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
                 </div>
+                
             </div>
         </div>
         <footer class="Footer">
