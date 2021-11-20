@@ -17,148 +17,154 @@
 <body>
     <div id="Container">
         <div class="HeaderFull" id="HeaderFull">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
+            <div class="SMHolder">
+                <div class="SearchBarHolder">
+                    <div class="SearchBar">
+                        <input type="text" class="HeaderSearchInput OpenSans">
+                        <button id="SearchButton">
+                            <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                        </button>
+                    </div>
+                </div>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
             </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite 77.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
-            <div class="NavigationUnfoldedLeft">
-                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
-                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
-                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            </div>
-            <div class="NavigationUnfoldedRight">
-                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
-                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+            <div class="NavigationHolder"> 
+                    <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                    <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                    <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+                <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                    <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                    <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                    <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
             </div>
         </div>
         <div class="HeaderFolded" id="HeaderFolded">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
-            </div>
-            <div class="NavigationFolded OpenSans">
-                <a href="MainPage.html">ГЛАВНАЯ</a>
-                <a href="About.html">О НАС</a>
-                <a href="Collections.html">КОЛЛЕКЦИИ</a>
-                <a href="Contacs.html">КОНТАКТЫ</a>
-                <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="Blog.html">БЛОГ</a>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite 77.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
+            <div class="HeaderFoldedItemsWrapper">
+                <div class="SearchBar">
+                    <input type="text" class="HeaderSearchInput OpenSans">
+                    <button id="SearchButton">
+                        <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                    </button>
+                </div>
+                <div class="NavigationFolded OpenSans">
+                    <a href="MainPage.html">ГЛАВНАЯ</a>
+                    <a href="About.html">О НАС</a>
+                    <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html">КОНТАКТЫ</a>
+                    <a href="Partners.html">ПАРТНЕРЫ</a>
+                    <a href="Blog.html">БЛОГ</a>
+                </div>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="MainContent">
-            <iframe class="VideoMain"
-                src="https://www.youtube.com/embed/szBl_AAQjiU?autoplay=1&mute=1&controls=0&modestbranding=1" frameborder='0'>
-            </iframe>
-            <div class="ProfileMain">
-                <div class="Face">
-                    <img src="./Img/Static/Face.png" alt="">
-                </div>
-                <div class="Fio">
-                    <h2 class="OpenSans Weight400 Size24">Наталья Градова</h2>
-                    <p class="OpenSans Weight300 Size24">Founder / Artdirector</p>
-                    <a href="About.html" class="OpenSans Weight400 Size14 HrefBtn">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <div class="CollectionsMain">
-                <div class="CollectionMainCards">
-                    <div>
-						<a href="Item.html">
-							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 1.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-							<p class="TenorSans Weight400 Size24" id="CollectionName1">Лилиан</p>
-                        </a>
+            <div class="MainContentPadding">
+                <iframe class="VideoMain"
+                    src="https://www.youtube.com/embed/szBl_AAQjiU?autoplay=1&mute=1&controls=0&modestbranding=1" frameborder='0'>
+                </iframe>
+                <div class="ProfileMain">
+                    <div class="Face">
+                        <img src="./Img/Static/Face.png" alt="">
                     </div>
-                    <div>
-						<a href="Item.html">
-							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 2.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-							<p class="TenorSans Weight400 Size24" id="CollectionName2">Милано</p>
-                        </a>
-                    </div>
-                    <div>
-						<a href="Item.html">
-							<div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 3.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
-							<p class="TenorSans Weight400 Size24" id="CollectionName3">Рози</p>
-                        </a>
+                    <div class="Fio">
+                        <h2 class="OpenSans Weight400 Size24">Наталья Градова</h2>
+                        <p class="OpenSans Weight300 Size24">Founder / Artdirector</p>
+                        <a href="About.html" class="OpenSans Weight400 Size14 HrefBtn">ПОДРОБНЕЕ</a>
                     </div>
                 </div>
-                <a href="Collections.html" class="OpenSans Weight400 Size14 HrefBtn">ВСЕ КОЛЛЕКЦИИ</a>
-            </div>
-            <div class="ContactsMain">
-                <div class="Break"></div>
-                <h3 class="TenorSans Weight400 Size24">Оставьте заявку на сотрудничество</h3>
-                <div class="ContactFormMainWrap">
-					<img class="ContactFormMainImg" src="Img/Заявка на глав странице Фото.png" alt="">
-					<div class="ContactFormMain">
-						<div class="PaddindImputField">
-							<form action="">
-								<div  class="InputFields">
-									<div class="MainInputName FixContaktiName">
-										<p class="TenorSans Size18">Имя</p>
-										<input type="text">
-									</div>
-									<div class="MainInputPhone FixContaktiPhone">
-										<p class="TenorSans Size18">Телефон</p>
-										<input type="tel">
-									</div>
-									<div class="MainInputEmail FixContaktiGorod">
-										<p class="TenorSans Size18">Город</p>
-										<input type="email">
-									</div>
-									<div class="MainInputSite">
-										<p class="TenorSans Size18">Салон</p>
-										<input type="url">                            
-									</div>
-									<div class="MainInputMessage FixContaktiMessage">
-										<p class="TenorSans Size18">Сообщение</p>
-										<textarea name="" id=""></textarea>
-									</div>
-								</div>
-								<div class="FlexSubscribeToNews">
-									<div>
-										<div class="SubscribeToNews">
-											<div class="form-group">
-												<input type="checkbox" id="html">
-												<label for="html"></label>
-											  </div>
-											<p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
-										</div>
-										<input class="OpenSans Weight400 Size14" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
+                <div class="CollectionsMain">
+                    <div class="CollectionMainCards">
+                        <div>
+                            <a href="Item.html">
+                                <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 1.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+                                <p class="TenorSans Weight400 Size24" id="CollectionName1">Лилиан</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="Item.html">
+                                <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 2.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+                                <p class="TenorSans Weight400 Size24" id="CollectionName2">Милано</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="Item.html">
+                                <div style="background-image: url(./Img/Коллекция\ на\ глав\ странице\ Фото\ 3.png); background-size: contain; background-repeat: no-repeat;" alt=""></div>
+                                <p class="TenorSans Weight400 Size24" id="CollectionName3">Рози</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="Collections.html" class="OpenSans Weight400 Size14 HrefBtn">ВСЕ КОЛЛЕКЦИИ</a>
                 </div>
+                <div class="ContactsMain">
+                    <div class="Break"></div>
+                    <h3 class="TenorSans Weight400 Size24">Оставьте заявку на сотрудничество</h3>
+                    <div class="ContactFormMainWrap">
+                        <img class="ContactFormMainImg" src="Img/Заявка на глав странице Фото.png" alt="">
+                        <div class="ContactFormMain">
+                            <div class="PaddindImputField">
+                                <form action="">
+                                    <div  class="InputFields">
+                                        <div class="MainInputName FixContaktiName">
+                                            <p class="TenorSans Size18">Имя</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="MainInputPhone FixContaktiPhone">
+                                            <p class="TenorSans Size18">Телефон</p>
+                                            <input type="tel">
+                                        </div>
+                                        <div class="MainInputEmail FixContaktiGorod">
+                                            <p class="TenorSans Size18">Город</p>
+                                            <input type="email">
+                                        </div>
+                                        <div class="MainInputSite">
+                                            <p class="TenorSans Size18">Салон</p>
+                                            <input type="url">                            
+                                        </div>
+                                        <div class="MainInputMessage FixContaktiMessage">
+                                            <p class="TenorSans Size18">Сообщение</p>
+                                            <textarea name="" id=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="FlexSubscribeToNews">
+                                        <div>
+                                            <div class="SubscribeToNews">
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="html">
+                                                    <label for="html"></label>
+                                                </div>
+                                                <p class="OpenSans Weight300"><em>Подписаться на новости</em></p>
+                                            </div>
+                                            <input class="OpenSans Weight400 Size14" id="SubmitButton" type="submit" value="ОТПРАВИТЬ">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 
+                </div>
             </div>
         </div>
         <footer class="Footer">
