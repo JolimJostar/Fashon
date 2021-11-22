@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+    <link rel="stylesheet" href="./css/MainStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="HeaderFull" id="HeaderFull">
+        <div class="SMHolder">
+            <div class="SearchBarHolder">
+                <div class="SearchBar">
+                    <input type="text" class="HeaderSearchInput OpenSans">
+                    <button id="SearchButton">
+                        <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                    </button>
+                </div>
+            </div>
+            <div class="Menu">
+                <a href="account.html" id="Account">
+                    <img src="/Img/Static/Account.svg" alt="">
+                </a>
+                <a href="favorite.html" id="Favorite" >
+                    <img src="/Img/Static/Favorite.svg" alt="">
+                </a>
+                <a href="cart.html" class="CartHolder">
+                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                    <p id="CartCount">5</p>
+                </a>
+            </div>
+        </div>
+        <div class="NavigationHolder"> 
+                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+            <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+        </div>
+    </div>
+    <div class="HeaderFolded" id="HeaderFolded">
+        <div class="HeaderFoldedItemsWrapper">
+            <div class="SearchBar">
+                <input type="text" class="HeaderSearchInput OpenSans">
+                <button id="SearchButton">
+                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                </button>
+            </div>
+            <div class="NavigationFolded OpenSans">
+                <a href="MainPage.html">ГЛАВНАЯ</a>
+                <a href="About.html">О НАС</a>
+                <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                <a href="Contacs.html">КОНТАКТЫ</a>
+                <a href="Partners.html">ПАРТНЕРЫ</a>
+                <a href="Blog.html">БЛОГ</a>
+            </div>
+            <div class="Menu">
+                <a href="account.html" id="Account">
+                    <img src="/Img/Static/Account.svg" alt="">
+                </a>
+                <a href="favorite.html" id="Favorite" >
+                    <img src="/Img/Static/Favorite.svg" alt="">
+                </a>
+                <a href="cart.html" class="CartHolder">
+                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                    <p id="CartCount">5</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="CollectionMainContent">
+        <div class="ItemCard">
+            <a href="/ChouseItem.html">
+                <img src="./Img/Коллекция картинка 1.png" alt="">
+            </a>
+            <a href="/ChouseItem.html" class="ItemName TenorSans Weight400">Дениз</a>
+            <div class="ShowPrice">
+                <p class="Price OpenSans Weight300">28 000 руб.</p>
+                <div class="ItemIcons"><button><img src="./Img/Static/FavoriteCollection.svg" alt=""></button><button><img src="./Img/Static/CartCollection.svg" alt=""></button></div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="Footer">
+        <div class="FooterOnas OpenSans">
+            <h3>О&nbsp;КОМПАНИИ</h3>
+            <a href="About.html">О&nbsp;нас</a>
+            <a href="Collections.html">Коллекции</a>
+            <a href="Partners.html">Партнеры</a>
+            <a href="Contacs.html">Контакты</a>
+        </div>
+        <div class="FooterHelp OpenSans">
+            <h3>ПОМОЩЬ</h3>
+            <a href="">Таблица&nbsp;размеров</a>
+            <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+            <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+        </div>
+        <div class="FooterDocs OpenSans">
+            <h3>СОГЛАШЕНИЯ</h3>
+            <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+            <a href="">Политика&nbsp;конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+</html>

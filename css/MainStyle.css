@@ -140,6 +140,7 @@ button{
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .SearchBarHolder{
@@ -1383,4 +1384,81 @@ ul {
 
 .FPholder p{
     display: inline-block;
+}
+
+.YourZakaz{
+    max-width: 470px;
+}
+
+.YZText{
+    letter-spacing: 0.185em;
+    color: #362B23;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #362B23;
+}
+
+.ZakazItems{
+    padding-top: 20px;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.ZakazItem{
+    display: flex;
+    flex-direction: row;
+    column-gap: 11px;
+}
+
+.ZIDetails{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.ZIInfo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    letter-spacing: 0.185em;
+    color: #362B23;
+}
+
+.ZIDetail{
+    display: grid;
+    grid-template-columns: 101px 114px;
+}
+
+.ZIDEelete{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ZIImage{
+    width: 89px;
+    height: 127px;
+}
+
+.ZIDengi{
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.ZIZena{
+    display: grid;
+    grid-template-columns: 101px 102px;
+}
+
+.ZISumm{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 47px 100px;
+}
+
+.SummValue{
+    text-align: right;
 }
