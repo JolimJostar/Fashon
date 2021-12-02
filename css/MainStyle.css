@@ -145,7 +145,6 @@ button{
 
 .SearchBarHolder{
     position: relative;
-    width: calc(50% - 115px);
     display: flex;
     justify-content: center;
 }
@@ -222,19 +221,23 @@ button{
 
 .NavigationHolder{
     position: relative;
-    top: -20px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 31px;
-    height: 132px;
+    top: 113px;
+    padding: 15px 5px;
+    border-top: #5A5450 solid 1px;
+    border-bottom: #5A5450 solid 1px;
+    max-width: 1050px;
+    margin: 0 auto;
 }
 
 #Logo{
     height: 132px;
     width: 230px;
-    position: relative;
-    top: 31px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .NavigationUnfoldedLeft{
@@ -419,19 +422,6 @@ button{
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 50px;
-}
-
-.MainInputName{
-
-}
-
-.MainInputPhone{
-}
-
-.MainInputEmail{
-}
-
-.MainInputSite{
 }
 
 .MainInputName input,
@@ -1114,10 +1104,6 @@ button{
     letter-spacing: 0.185em;
 }
 
-.OMain{
-
-}
-
 .OList{
     display: flex;
     flex-direction: column;
@@ -1295,6 +1281,9 @@ ul {
 	-webkit-border-radius: 3px;
 	padding: 11px 20px;
 	display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.185em;
+    color: #362B23;
 }
 
 .ProfileMain .Fio .HrefBtn{
@@ -1538,4 +1527,83 @@ ul {
     width: 100%;
     height: 41px;
     border: 2px solid #362B23;;
+}
+
+.ZakaziContent{
+    max-width: 826px;
+    letter-spacing: 0.185em;
+    padding-left: 235px;
+    padding-top: 35px;
+}
+
+.ZakaziFlex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    max-width: 770px;
+}
+
+.ZMain{
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    border-bottom: #AFC4C0 solid 1px;
+}
+
+.ZMain > p{
+    text-align: center;
+}
+
+.ZItem{
+    font-size: 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-bottom: #AFC4C0 solid 1px;
+}
+
+.ZItem > p{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ZItem > a{
+    position: absolute;
+    transform: translateY(-3px);
+    right: -40px;
+}
+
+.ZH1{
+    width: 470px;
+    padding-bottom: 11px;
+    border-bottom: #95AAA6 solid 1px;
+    color: #362B23;
+}
+
+.Exit{
+    margin-top: 121px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.NIHolder{
+    margin-top: 108px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    width: fit-content;
+    align-items: center;
+}
+
+.NIHolder > button{
+    width: fit-content;
 }
