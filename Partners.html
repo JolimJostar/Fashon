@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./css/MainStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
 </head>
 <body>
     <div class="HeaderFull" id="HeaderFull">
@@ -26,6 +27,7 @@
                     </button>
                 </div>
             </div>
+            <img id="Logo"src="./Img/Static/Logo.png" alt="">
             <div class="Menu">
                 <a href="account.html" id="Account">
                     <img src="/Img/Static/Account.svg" alt="">
@@ -43,7 +45,6 @@
                 <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
                 <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
                 <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
                 <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
                 <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
@@ -80,67 +81,114 @@
         </div>
     </div>
     <div class="MainContentContacti">
-        <div class="ContentContacti">
-            <h1 class="ContactiParnersH1 TenorSans Weight400 Size24">САЛОНЫ - ПАРТНЕРЫ</h1>
-            <div class="BottomMain">
-                <div class="Roboto Size18 NaimenovaniaColonok">
-                    <p class="Naimenovanie"></p>
-                    <p class="Naimenovanie"></p>
-                    <p class="Naimenovanie"></p>
-                    <p class="Naimenovanie"></p>
-                    <img src="" alt="">
-                    <div class="Partneri Roboto Size18">
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
-                        <div class="PartneriLine">
-                            <p class="Strana">Россия</p>
-                            <p class="Gorod">Москва</p>
-                            <p class="Salon">Винтаж</p>
-                            <div class="OnlineColl"><img src="" alt="" class="SiteLink"><img src="" alt="" class="InstaLink"></div>
-                        </div>
+        <div class="Country">
+            <h1 class="Size24 TenorSans Weight400">Россия</h1>
+            <div class="PartnersHolder">
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="Country">
+            <h1 class="Size24 TenorSans Weight400">Украина</h1>
+            <div class="PartnersHolder">
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
+                <div class="Partner Size18 Weight400 OpenSans">
+                    <h4 class="TenorSans">санкт-петербург</h4>
+                    <span></span>
+                    <p>Салон “Праздник”</p>
+                    <p>+7 (123) 456-78-90</p>
+                    <div class="PIcons">
+                        <img src="Img/Static/WebsiteIcon.svg" width="25px" height="25px" alt="">
+                        <img src="Img/Static/InstIcon.svg"  width="25px" height="25px" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

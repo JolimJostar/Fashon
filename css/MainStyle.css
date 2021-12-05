@@ -5,6 +5,13 @@
   flex-shrink: 0;
 }
 
+*{
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+
 :root{
     --MainColor: #5A5450;
 }
@@ -826,25 +833,6 @@ button{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     color: #362B23;
-}
-
-.MainContentContacti {
-    width: 1440px;
-    height: 1448px;
-    background: rgba(245, 240, 235, 0.5);
-}
-.ContentContacti {
-    width: 1170px;
-    height: 733px;
-    position: relative;
-    top: 50px;
-    left: 135px;
-    padding-left: 100px
-}
-.ContactiParnersH1 {
-    letter-spacing: 0.185em;
-    color: #362B23;
-    margin-bottom: 58px;
 }
 
 .BottomMain{
@@ -1732,4 +1720,55 @@ ul {
     margin-bottom: 11px;
     max-width: 370px;
     text-transform: uppercase;
+}
+
+.MainContentContacti{
+    width: 972px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.Country > h1 {
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(54, 43, 35, 0.31);
+    color: #362B23;
+    text-transform: uppercase;
+}
+
+.PartnersHolder{
+    padding: 50px 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 75px;
+    flex-direction: row;
+    row-gap: 75px;
+}
+
+.Partner{
+    letter-spacing: 0.185em;
+    width: fit-content  ;
+}
+
+.Partner > h4{
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.Partner > span{
+    display: block;
+    height: 0px;
+    width: 200px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.PIcons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    column-gap: 20px;   
 }
