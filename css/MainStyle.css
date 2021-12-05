@@ -1607,3 +1607,129 @@ ul {
 .NIHolder > button{
     width: fit-content;
 }
+
+.BlogBlock1{
+    letter-spacing: 0.185em;
+    padding: 46px 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(175, 196, 192, 0.43);
+}
+
+.BlogBlock1 > h1{
+    margin-bottom: 44px;
+    text-transform: uppercase;
+}
+
+.BlogBlock1 > p{
+    margin-top: 130px;
+}
+
+.BB1ImageHolder{
+    width: 770px;
+    height: 339px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 86px;
+}
+
+.BlogBlock2{
+    letter-spacing: 0.185em;
+    padding: 42px 433px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.BB2Content{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.BB2ImageHolder{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+}
+
+.AuthorLine{
+    border-bottom: 1px solid black;
+    max-width: 267px;
+}
+
+.BlogBlock3{
+    padding: 70px 235px 70px 135px;
+    background: rgba(219, 202, 209, 0.43);
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    letter-spacing: 0.185em;
+}
+
+.BB3Item{
+    display: flex;
+    flex-direction: row;
+    column-gap: 130px;
+}
+
+.BB3IContent{
+    justify-content: center;
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.BB3IContent > h1{
+    width: 270px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid black;
+}
+
+.BlogBLock4{
+    letter-spacing: 0.185em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 75px 435px;
+    align-items: flex-end;
+}
+
+.BB4P{
+    width: 175px;
+    border-top: 1px solid black;
+    position: relative;
+    left: 50px;
+    text-align: right;
+}
+
+.BlogBlock5{
+    letter-spacing: 0.185em;
+    padding: 50px 235px;
+}
+
+.BB5Holder{
+    display: flex;
+    flex-direction: row;
+    column-gap: 65px;
+}
+
+.BB5Holder > div{
+    max-width: 570px;
+}
+
+.BB5H1{
+    margin-bottom: 14px;
+}
+
+.BB5H3{
+    padding-bottom: 13px;
+    border-bottom: 1px solid black;
+    margin-bottom: 11px;
+    max-width: 370px;
+    text-transform: uppercase;
+}

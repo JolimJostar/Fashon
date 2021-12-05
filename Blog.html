@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блог</title>
-    <link rel="stylesheet" href="/MainStyle.css">
+    <link rel="stylesheet" href="/css/MainStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
 </head>
 <body>
     <div class="HeaderFull" id="HeaderFull">
@@ -25,6 +27,7 @@
                     </button>
                 </div>
             </div>
+            <img id="Logo"src="./Img/Static/Logo.png" alt="">
             <div class="Menu">
                 <a href="account.html" id="Account">
                     <img src="/Img/Static/Account.svg" alt="">
@@ -42,7 +45,6 @@
                 <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
                 <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
                 <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
                 <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
                 <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
@@ -78,67 +80,55 @@
             </div>
         </div>
     </div>
-    <div class="MainContentBlog">
-        <div class="SectionNewCollection">
-            <h1>Новая коллекция осень - зима 2022</h1>
-            <div class="WhiteBlock"></div>
-            <img src="" alt="">
-            <p>Lorem ipsum</p>
-            <SectionText1>
-                <p>С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление не оставляет шанса для своевременного выполнения сверхзадачи. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно. </p>
-                <div>
-                    <img src="" alt=""><img src="" alt="">
-                    <p>С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление не оставляет шанса для своевременного выполнения сверхзадачи. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно. </p>
-                    <div>
-                        <p>Наталья Градова</p>
-                        <div class="DeviderLitle"></div>
-                        <p>Сентябрь 2021</p>
-                    </div>
-                </div>
-                <SectionText2>
-                    <img src="" alt="">
-                    <div>
-                        <h1>Lorem ipsum</h1>
-                        <div class="DeviderTextIdkn"></div>
-                        <p>Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования преданы социально-демократической анафеме. Значимость этих проблем настолько очевидна, что сложившаяся структура организации представляет собой интересный эксперимент проверки глубокомысленных рассуждений. </p>
-                    </div>
-                    <img src="" alt="">
-                    <div>
-                        <h1>Lorem ipsum</h1>
-                        <div class="DeviderTextIdkn"></div>
-                        <p>Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования преданы социально-демократической анафеме. Значимость этих проблем настолько очевидна, что сложившаяся структура организации представляет собой интересный эксперимент проверки глубокомысленных рассуждений. </p>
-                    </div>
-                    <SectionText3>
-                        <p></p>
-                        <div>
-                            <div class="DeviderLitle"></div>
-                            <p>Июль 2021</p>
-                        </div>
-                        <SectionTextLast>
-                            <img src="" alt="">
-                            <div>
-                                <h1>Выход новой коллекции</h1>
-                                <p>В своём стремлении повысить качество жизни, они забывают.</p>
-                                <div class="DeviderIAmTired"></div>
-                                <p>Внезапно, реплицированные с зарубежных источников, современные исследования, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. А ещё интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, разоблачены. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-                            </div>
-                        </SectionTextLast>
-                    </SectionText3>
-                </SectionText2>
-            </SectionText1>
+    <div class="BlogContent">
+        <div class="BlogBlock1">
+            <h1 class="TenorSans Weight400 Size18">Новая коллекция осень - зима 2022</h1>
+            <div class="BB1ImageHolder"><img src="/Img/Блог блок 1.png" alt="Фото коллекции" width="570px" height="362px"></div>
+            <p class="OpenSans Weight300 Size18">Lorem ipsum</p>
         </div>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-        </head>
-        <body>
-            
-        </body>
-    </html>
+        <div class="BlogBlock2 OpenSans Weight400">
+            <div class="BB2Content Size18">
+                <p>С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление не оставляет шанса для своевременного выполнения сверхзадачи. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+                <div class="BB2ImageHolder">
+                    <img src="Img/Блог Блок 2 катинка 1.png"  width="235px" height="300px" alt="Блог Блок 2 катинка 1"><img src="Img/Блог Блок 2 катинка 2.png" width="235px" height="300px" alt="Блог Блок 2 катинка 2">
+                </div>
+                <p>С учётом сложившейся международной обстановки, разбавленное изрядной долей эмпатии, рациональное мышление не оставляет шанса для своевременного выполнения сверхзадачи. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно. </p>
+            </div>
+            <div class="BB2Author Size12">
+                <p class="AuthorLine">Наталья Градова</p>
+                <p>Сентябрь 2021</p>
+            </div>
+        </div>
+        <div class="BlogBlock3">
+            <div class="BB3Item">
+                <img src="Img/Блог Блок 3 катинка 1.png" width="270px" height="270px" alt="">
+                <div class="BB3IContent">
+                    <h1 class="TenorSans Weight400 Size24">Lorem ipsum</h1>
+                    <p class="OpenSans Weight400 Size18">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования преданы социально-демократической анафеме. Значимость этих проблем настолько очевидна, что сложившаяся структура организации представляет собой интересный эксперимент проверки глубокомысленных рассуждений. </p>
+                </div>
+            </div>
+            <div class="BB3Item">
+                <img src="Img/Блог Блок 3 катинка 2.png" width="270px" height="270px" alt="">
+                <div class="BB3IContent">
+                    <h1 class="TenorSans Weight400 Size24">Lorem ipsum</h1>
+                    <p class="OpenSans Weight400 Size18">Противоположная точка зрения подразумевает, что реплицированные с зарубежных источников, современные исследования преданы социально-демократической анафеме. Значимость этих проблем настолько очевидна, что сложившаяся структура организации представляет собой интересный эксперимент проверки глубокомысленных рассуждений. </p>
+                </div>
+            </div>
+        </div>
+        <div class="BlogBLock4 OpenSans Weight400">
+            <p class="Size18">Но предприниматели в сети интернет и по сей день остаются уделом либералов, которые жаждут быть преданы социально-демократической анафеме. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании первоочередных требований. Вот вам яркий пример современных тенденций - убеждённость некоторых оппонентов создаёт предпосылки для укрепления моральных ценностей. </p>
+            <p class="BB4P Size12">Июль 2021</p>
+        </div>
+        <div class="BlogBlock5">
+            <div class="BB5Holder">
+                <img src="Img/Блог Блок 5 катинка.png" width="332px" height="410px" alt="">
+                <div>
+                    <h1 class="TenorSans Size24 Weight400 BB5H1">Выход новой коллекции</h1>
+                    <h3 class="Size12 OpenSans Weight400 OpenSans BB5H3">В своём стремлении повысить качество жизни, они забывают.</h3>
+                    <p class="OpenSans Size18 Weight400">Внезапно, реплицированные с зарубежных источников, современные исследования, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. А ещё интерактивные прототипы освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, разоблачены. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="Footer">
         <div class="FooterOnas OpenSans">
