@@ -13,142 +13,148 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
 </head>
 <body>
-    <div class="HeaderFull" id="HeaderFull">
-        <div class="SMHolder">
-            <div class="SearchBarHolder">
+    <div id="Container">
+        <div class="HeaderFull" id="HeaderFull">
+            <div class="SMHolder">
+                <div class="SearchBarHolder">
+                    <div class="SearchBar">
+                        <input type="text" class="HeaderSearchInput OpenSans">
+                        <button id="SearchButton">
+                            <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                        </button>
+                    </div>
+                </div>
+                <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
+            </div>
+            <div class="NavigationHolder"> 
+                    <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                    <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                    <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                    <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                    <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+            </div>
+        </div>
+        <div class="HeaderFolded" id="HeaderFolded">
+            <div class="HeaderFoldedItemsWrapper">
                 <div class="SearchBar">
                     <input type="text" class="HeaderSearchInput OpenSans">
                     <button id="SearchButton">
                         <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
                     </button>
                 </div>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-        <div class="NavigationHolder"> 
-                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
-                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
-                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
-                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
-                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
-        </div>
-    </div>
-    <div class="HeaderFolded" id="HeaderFolded">
-        <div class="HeaderFoldedItemsWrapper">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
-            </div>
-            <div class="NavigationFolded OpenSans">
-                <a href="MainPage.html">ГЛАВНАЯ</a>
-                <a href="About.html">О НАС</a>
-                <a href="Collections.html">КОЛЛЕКЦИИ</a>
-                <a href="Contacs.html">КОНТАКТЫ</a>
-                <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="Blog.html">БЛОГ</a>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="MainContentAbout">
-        <div class="PersonalBlock">
-            <div class="PersonalBlockText">
-                <h1 class="PersonalBlockTextH1 TenorSans Weight400 Size24">Наталья Градова</h1>
-                <p class="PersonalBlockTextP OpenSans Weight300 Size16">Есть над чем задуматься: ключевые особенности структуры проекта являются только методом политического участия и в равной степени предоставлены сами себе. А также действия представителей оппозиции разоблачены. Как принято считать, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Имеется спорная точка зрения, гласящая примерно следующее: независимые государства обнародованы.</p>
-            </div>
-            <div class="PersonalBlockImg">
-                <img src="./Img/Static/AboutUs.png" alt="">
-            </div>
-        </div>
-        <div class="AboutUs">
-            <div class="PinkLine"></div>
-            <div class="AboutUsImg">
-                <img src="./Img/Static/AboutDress.png" alt="">
-            </div>
-            <div class="AboutUsText">
-                <h1 class="TenorSans Size36 Weight400 AboutUsTextH1">О НАС</h1>
-                <img src="Img/Static/Палочка.svg" alt="" class="Palochka">
-                <p class="OpenSans Weight400 Size12">С другой стороны, выбранный нами инновационный путь требует определения и уточнения своевременного выполнения сверхзадачи.<br><br>
-                    Но предприниматели в сети интернет превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В частности, высококачественный прототип будущего проекта не оставляет шанса для как самодостаточных, так и внешне зависимых концептуальных решений. А ещё явные признаки победы институционализации, инициированные исключительно синтетически, обнародованы.</p>
-            </div>
-        </div>
-        <div class="Principi">
-            <h1 class="PrincipiH1 TenorSans Size36">Принцип нашей работы</h1>
-            <div class="PrincipiCards">
-                <div class="PrincipiCard">
-                    <h2 class="OpenSans Size24">Сроки пошива</h2>
-                    <p class="OpenSans Weight300 Size18">3-4 недели</p>
+                <div class="NavigationFolded OpenSans">
+                    <a href="MainPage.html">ГЛАВНАЯ</a>
+                    <a href="About.html">О НАС</a>
+                    <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html">КОНТАКТЫ</a>
+                    <a href="Partners.html">ПАРТНЕРЫ</a>
+                    <a href="Blog.html">БЛОГ</a>
                 </div>
-                <div class="PrincipiCard">
-                    <h2 class="OpenSans Size24">Доставка</h2>
-                    <p class="OpenSans Weight300 Size18">СДЭК<br>1-2 недели</p>
-                </div>
-                <div class="PrincipiCard">
-                    <h2 class="OpenSans Size24">Сроки пошива</h2>
-                    <p class="OpenSans Weight300 Size18">В течении 2х недель</p>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="DostupKCenam">
-            <div class="WhiteScreen"></div>
-            <div class="GreenScreen"></div>
-            <h1 class="TenorSans Size36">Получите дотуп к ценам</h1>
-            <img src="./Img/Static/AboutPrices.png" alt="">
-            <div class="BlockRegistr">
-                <p class="OpenSans Weight400 Size18 BlockRegistrP">Но сложившаяся структура организации однозначно определяет каждого участника как способного принимать собственные решения касаемо стандартных подходов. Каждый из нас понимает очевидную вещь: постоянное информационно-пропагандистское обеспечение нашей деятельности говорит о возможностях первоочередных требований.</p>
-                <button class="OpenSans Size14">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        <div class="MainContentAbout">
+            <div class="PersonalBlock">
+                <div class="PersonalBlockText">
+                    <h1 class="PersonalBlockTextH1 TenorSans Weight400 Size24">Наталья Градова</h1>
+                    <p class="PersonalBlockTextP OpenSans Weight300 Size16">Есть над чем задуматься: ключевые особенности структуры проекта являются только методом политического участия и в равной степени предоставлены сами себе. А также действия представителей оппозиции разоблачены. Как принято считать, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Имеется спорная точка зрения, гласящая примерно следующее: независимые государства обнародованы.</p>
+                </div>
+                <div class="PersonalBlockImg">
+                    <img src="./Img/Static/AboutUs.png" alt="">
+                </div>
+            </div>
+            <div class="AboutUs">
+                <div class="PinkLine"></div>
+                <div class="AboutUsHolder">
+                    <div class="AboutUsImg">
+                        <img src="./Img/Static/AboutDress.png" alt="">
+                    </div>
+                    <div class="AboutUsText">
+                        <h1 class="TenorSans Size36 Weight400 AboutUsTextH1">О НАС</h1>
+                        <img src="Img/Static/Палочка.svg" alt="" class="Palochka">
+                        <p class="OpenSans Weight400 Size12">С другой стороны, выбранный нами инновационный путь требует определения и уточнения своевременного выполнения сверхзадачи.<br><br>
+                            Но предприниматели в сети интернет превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. В частности, высококачественный прототип будущего проекта не оставляет шанса для как самодостаточных, так и внешне зависимых концептуальных решений. А ещё явные признаки победы институционализации, инициированные исключительно синтетически, обнародованы.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Principi">
+                <h1 class="PrincipiH1 TenorSans Size36">Принцип нашей работы</h1>
+                <div class="PrincipiCards">
+                    <div class="PrincipiCard">
+                        <h2 class="OpenSans Size24">Сроки пошива</h2>
+                        <p class="OpenSans Weight300 Size18">3-4 недели</p>
+                    </div>
+                    <div class="PrincipiCard">
+                        <h2 class="OpenSans Size24">Доставка</h2>
+                        <p class="OpenSans Weight300 Size18">СДЭК<br>1-2 недели</p>
+                    </div>
+                    <div class="PrincipiCard">
+                        <h2 class="OpenSans Size24">Сроки пошива</h2>
+                        <p class="OpenSans Weight300 Size18">В течении 2х недель</p>
+                    </div>
+                </div>
+            </div>
+            <div class="DostupKCenam">
+                <div class="WhiteScreen"></div>
+                <div class="GreenScreen"></div>
+                <h1 class="TenorSans Size36">Получите дотуп к ценам</h1>
+                <img src="./Img/Static/AboutPrices.png" alt="">
+                <div class="BlockRegistr">
+                    <p class="OpenSans Weight400 Size18 BlockRegistrP">Но сложившаяся структура организации однозначно определяет каждого участника как способного принимать собственные решения касаемо стандартных подходов. Каждый из нас понимает очевидную вещь: постоянное информационно-пропагандистское обеспечение нашей деятельности говорит о возможностях первоочередных требований.</p>
+                    <button class="OpenSans Size14">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
             </div>
         </div>
+        <footer class="Footer">
+            <div class="FooterHolder">
+                <div class="FooterOnas OpenSans">
+                    <h3>О&nbsp;КОМПАНИИ</h3>
+                    <a href="About.html">О&nbsp;нас</a>
+                    <a href="Collections.html">Коллекции</a>
+                    <a href="Partners.html">Партнеры</a>
+                    <a href="Contacs.html">Контакты</a>
+                </div>
+                <div class="FooterHelp OpenSans">
+                    <h3>ПОМОЩЬ</h3>
+                    <a href="">Таблица&nbsp;размеров</a>
+                    <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+                    <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+                </div>
+                <div class="FooterDocs OpenSans">
+                    <h3>СОГЛАШЕНИЯ</h3>
+                    <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+                    <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="Footer">
-        <div class="FooterOnas OpenSans">
-            <h3>О&nbsp;КОМПАНИИ</h3>
-            <a href="">О&nbsp;нас</a>
-            <a href="">Коллекции</a>
-            <a href="">Партнеры</a>
-            <a href="">Контакты</a>
-        </div>
-        <div class="FooterHelp OpenSans">
-            <h3>ПОМОЩЬ</h3>
-            <a href="">Таблица&nbsp;размеров</a>
-            <a href="">Доставка&nbsp;и&nbsp;оплата</a>
-            <a href="">Возврат&nbsp;и&nbsp;обмен</a>
-        </div>
-        <div class="FooterDocs OpenSans">
-            <h3>СОГЛАШЕНИЯ</h3>
-            <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
-            <a href="">Политика&nbsp;конфиденциальности</a>
-        </div>
-    </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/Main.js"></script>
 </body>
 </html>

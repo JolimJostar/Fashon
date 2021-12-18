@@ -13,201 +13,264 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
+    <script defer src="./js/CouseItem.js"></script>
 </head>
 <body>
-    <div class="HeaderFull" id="HeaderFull">
-        <div class="SMHolder">
-            <div class="SearchBarHolder">
+    <div id="Container">
+        <div class="HeaderFull" id="HeaderFull">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+
+                <div class="SearchBarHolder Hidden">
+                    <div class="SearchBar">
+                        <input type="text" class="HeaderSearchInput OpenSans">
+                        <button id="SearchButton">
+                            <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                        </button>
+                    </div>
+                </div>
+                <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
+                </div>
+            </div>
+            <div class="NavigationHolder"> 
+                    <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                    <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                    <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                    <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                    <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+            </div>
+        </div>
+        <div class="HeaderFolded" id="HeaderFolded">
+            <div class="HeaderFoldedItemsWrapper">
                 <div class="SearchBar">
                     <input type="text" class="HeaderSearchInput OpenSans">
                     <button id="SearchButton">
                         <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
                     </button>
                 </div>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-        <div class="NavigationHolder"> 
-                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
-                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
-                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
-                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
-                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
-        </div>
-    </div>
-    <div class="HeaderFolded" id="HeaderFolded">
-        <div class="HeaderFoldedItemsWrapper">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
-            </div>
-            <div class="NavigationFolded OpenSans">
-                <a href="MainPage.html">ГЛАВНАЯ</a>
-                <a href="About.html">О НАС</a>
-                <a href="Collections.html">КОЛЛЕКЦИИ</a>
-                <a href="Contacs.html">КОНТАКТЫ</a>
-                <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="Blog.html">БЛОГ</a>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="ChouseItemMainContent">
-        <div class="Showcase">
-            <div class="MainPicture"><img id="ExpandedImg" src="Img/Страница платья картинка 1.png" alt=""></div>
-            <div class="ScrollPictures">
-                <div class="SPItself"><img src="./Img/Страница платья картинка 1.png" alt="" onclick="ChangePic(this);"></div>
-                <div class="SPItself"><img src="./Img/Страница платья картинка 2.png" alt="" onclick="ChangePic(this);"></div>
-                <div class="SPItself"><img src="./Img/Страница платья картинка 3.png" alt="" onclick="ChangePic(this);"></div>
-            </div>
-        </div>
-        <div class="ItemBuy">
-            <div class="NamePrice">
-                <p class="IN TenorSans Size24">Дениз</p>
-                <p class="TP OpenSans Size18">28 000 руб</p>
-            </div>
-            <div class="CharDiv">
-                <div class="CharacteristicDiv">
-                    <div class="custom-select OpenSans Size12 Weight300">
-                        <select>
-                          <option value="0">Белый</option>
-                          <option value="1">Белый</option>
-                          <option value="2">Красный</option>
-                          <option value="3">Синий</option>
-                        </select>
-                    </div>
-                    <div class="custom-select OpenSans Size12 Weight300">
-                        <select>
-                          <option value="0">Выберите размер</option>
-                          <option value="1">s</option>
-                          <option value="2">m</option>
-                        </select>
-                    </div>
-                    <div class="SelectNumber OpenSans Weight300 Size18">
-                        <button class="MinusArrow" onclick=""><&nbsp;&nbsp;</button>
-                        <p class="Count">0</p>
-                        <button class="PlusArrow">&nbsp;&nbsp;></button>
-                    </div>
+                <div class="NavigationFolded OpenSans">
+                    <a href="MainPage.html">ГЛАВНАЯ</a>
+                    <a href="About.html">О НАС</a>
+                    <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html">КОНТАКТЫ</a>
+                    <a href="Partners.html">ПАРТНЕРЫ</a>
+                    <a href="Blog.html">БЛОГ</a>
                 </div>
-                <div class="CharacteristicDiv">
-                    <div class="custom-select OpenSans Size12 Weight300">
-                        <select>
-                          <option value="0">Белый</option>
-                          <option value="1">Белый</option>
-                          <option value="2">Красный</option>
-                          <option value="3">Синий</option>
-                        </select>
-                    </div>
-                    <div class="custom-select OpenSans Size12 Weight300">
-                        <select>
-                          <option value="0">Выберите размер</option>
-                          <option value="1">s</option>
-                          <option value="2">m</option>
-                        </select>
-                    </div>
-                    <div class="SelectNumber OpenSans Weight300 Size18">
-                        <button class="MinusArrow" onclick=""><&nbsp;&nbsp;</button>
-                        <p class="Count">0</p>
-                        <button class="PlusArrow">&nbsp;&nbsp;></button>
-                    </div>
-                </div>
-                <p class="OpenSans Weight300 Size12 MainColor">Ещё...</p>
-            </div>
-            <div class="AddTOCartDiv">
-                <button class="AddToCart MAinColor OpenSans Weight300 Size12">Добавить в корзину</button>
-                <img src="./Img/Static/Favorite gray.svg" alt="" class="AddToFav">
-            </div>
-            <div class="HrefsItem">
-                <a href="" class="Table Weight300 OpenSans">ТАБЛИЦА РАЗМЕРОВ</a>
-                <div class="HIMore Weight300 Size10 OpenSans">
-                    <a href="" class="Opis">ОПИСАНИЕ</a>
-                    <div class="LittleLine"></div>
-                    <a href="" class="Details">ДЕТАЛИ</a>
-                    <div class="LittleLine"></div>
-                    <a href="" class="Dostav">ДОСТАВКА И ОПЛАТА</a>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
                 </div>
             </div>
-            <div class="Opisanie Weight300 Roboto Size12">
-                <p class="OMain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <ul class="OList">
-                    <li style="display: flex; align-items: center; width: 100px;">
-                        <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
-                        box-sizing: border-box;" src="" alt="">
-                        <p class="OLItem">&nbsp;Lorem ipsum</p>
-                    </li>
-                    <li style="display: flex; align-items: center; width: 100px;">
-                        <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
-                        box-sizing: border-box;" src="" alt="">
-                        <p class="OLItem">&nbsp;Lorem ipsum</p>
-                    </li>
-                    <li style="display: flex; align-items: center; width: 100px;">
-                        <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
-                        box-sizing: border-box;" src="" alt="">
-                        <p class="OLItem">&nbsp;Lorem ipsum</p>
-                    </li>
-                    <li style="display: flex; align-items: center; width: 100px;">
-                        <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
-                        box-sizing: border-box;" src="" alt="">
-                        <p class="OLItem">&nbsp;Lorem ipsum</p>
-                    </li>
-                    <li style="display: flex; align-items: center; width: 100px;">
-                        <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
-                        box-sizing: border-box;" src="" alt="">
-                        <p class="OLItem">&nbsp;Lorem ipsum</p>
-                    </li>
-                </ul>
+        </div>
+        <div class="ChouseItemMainContent">
+            <div class="max-width-1045px margin-0-auto flex">
+                <div class="Showcase">
+                    <div class="MainPicture"><img id="ExpandedImg" src="Img/Страница платья картинка 1.png" alt=""></div>
+                    <div class="ScrollPictures">
+                        <div class="SPItself"><img src="./Img/Страница платья картинка 1.png" alt="" onclick="ChangePic(this);"></div>
+                        <div class="SPItself"><img src="./Img/Страница платья картинка 2.png" alt="" onclick="ChangePic(this);"></div>
+                        <div class="SPItself"><img src="./Img/Страница платья картинка 3.png" alt="" onclick="ChangePic(this);"></div>
+                    </div>
+                </div>
+                <div class="ItemBuy">
+                    <div class="NamePrice">
+                        <p class="IN TenorSans Size24">Дениз</p>
+                        <p class="TP OpenSans Size18">28 000 руб</p>
+                    </div>
+                    <div class="CharDiv">
+                        <div class="CharacteristicDiv">
+                            <div class="custom-select OpenSans Size12 Weight300">
+                                <select>
+                                  <option value="0">Белый</option>
+                                  <option value="1">Белый</option>
+                                  <option value="2">Красный</option>
+                                  <option value="3">Синий</option>
+                                </select>
+                            </div>
+                            <div class="custom-select OpenSans Size12 Weight300">
+                                <select>
+                                  <option value="0">Выберите размер</option>
+                                  <option value="1">s</option>
+                                  <option value="2">m</option>
+                                </select>
+                            </div>
+                            <div class="SelectNumber OpenSans Weight300 Size18">
+                                <button class="MinusArrow" onclick=""><&nbsp;&nbsp;</button>
+                                <p class="Count">0</p>
+                                <button class="PlusArrow">&nbsp;&nbsp;></button>
+                            </div>
+                        </div>
+                        <div class="CharacteristicDiv">
+                            <div class="custom-select OpenSans Size12 Weight300">
+                                <select>
+                                  <option value="0">Белый</option>
+                                  <option value="1">Белый</option>
+                                  <option value="2">Красный</option>
+                                  <option value="3">Синий</option>
+                                </select>
+                            </div>
+                            <div class="custom-select OpenSans Size12 Weight300">
+                                <select>
+                                  <option value="0">Выберите размер</option>
+                                  <option value="1">s</option>
+                                  <option value="2">m</option>
+                                </select>
+                            </div>
+                            <div class="SelectNumber OpenSans Weight300 Size18">
+                                <button class="MinusArrow" onclick=""><&nbsp;&nbsp;</button>
+                                <p class="Count">0</p>
+                                <button class="PlusArrow">&nbsp;&nbsp;></button>
+                            </div>
+                        </div>
+                        <p class="OpenSans Weight300 Size12 MainColor">Ещё...</p>
+                    </div>
+                    <div class="AddTOCartDiv">
+                        <button class="AddToCart MAinColor OpenSans Weight300 Size12">Добавить в корзину</button>
+                        <img src="./Img/Static/Favorite gray.svg" alt="" class="AddToFav">
+                    </div>
+                    <div class="HrefsItem">
+                        <a href="" class="Table Weight300 OpenSans">ТАБЛИЦА РАЗМЕРОВ</a>
+                        <div class="HIMore Weight300 Size10 OpenSans">
+                            <a href="" class="Opis">ОПИСАНИЕ</a>
+                            <div class="LittleLine"></div>
+                            <a href="" class="Details">ДЕТАЛИ</a>
+                            <div class="LittleLine"></div>
+                            <a href="" class="Dostav">ДОСТАВКА И ОПЛАТА</a>
+                        </div>
+                    </div>
+                    <div class="Opisanie Weight300 Roboto Size12">
+                        <p class="OMain">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <ul class="OList">
+                            <li style="display: flex; align-items: center; width: 100px;">
+                                <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
+                                box-sizing: border-box;" src="" alt="">
+                                <p class="OLItem">&nbsp;Lorem ipsum</p>
+                            </li>
+                            <li style="display: flex; align-items: center; width: 100px;">
+                                <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
+                                box-sizing: border-box;" src="" alt="">
+                                <p class="OLItem">&nbsp;Lorem ipsum</p>
+                            </li>
+                            <li style="display: flex; align-items: center; width: 100px;">
+                                <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
+                                box-sizing: border-box;" src="" alt="">
+                                <p class="OLItem">&nbsp;Lorem ipsum</p>
+                            </li>
+                            <li style="display: flex; align-items: center; width: 100px;">
+                                <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
+                                box-sizing: border-box;" src="" alt="">
+                                <p class="OLItem">&nbsp;Lorem ipsum</p>
+                            </li>
+                            <li style="display: flex; align-items: center; width: 100px;">
+                                <img style="width: 7px; height: 7px; border: 1px solid #4F4040; border-radius: 100%;
+                                box-sizing: border-box;" src="" alt="">
+                                <p class="OLItem">&nbsp;Lorem ipsum</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
-            
         </div>
+        <footer class="Footer">
+            <div class="FooterHolder">
+                <div class="FooterOnas OpenSans">
+                    <h3>О&nbsp;КОМПАНИИ</h3>
+                    <a href="About.html">О&nbsp;нас</a>
+                    <a href="Collections.html">Коллекции</a>
+                    <a href="Partners.html">Партнеры</a>
+                    <a href="Contacs.html">Контакты</a>
+                </div>
+                <div class="FooterHelp OpenSans">
+                    <h3>ПОМОЩЬ</h3>
+                    <a href="">Таблица&nbsp;размеров</a>
+                    <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+                    <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+                </div>
+                <div class="FooterDocs OpenSans">
+                    <h3>СОГЛАШЕНИЯ</h3>
+                    <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+                    <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <footer class="FooterMobile text-center pt-20 pb-16 row-gap-33 flex flex-col">
+            <div class="flex flex-col row-gap-12">
+                <div class="flex flex-col items-center">
+                    <button class="max-width-fit btnFooter decoration-line">    
+                        <h1>Политика</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive" >
+                        <a class="decoration-line" href="">Согласие на обработку пнд</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter ">
+                        <h1>Компания</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <a href="About.html">О нас</a>
+                        <a href="Partners.html">партнеры</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter">
+                        <h1>Контакты</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <p>+7 012 345-67-89</p>
+                        <p>abvgd@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <div>
+                   <img height="11px" width="11px" src="Img/Static/WebsiteIcon.svg" alt=""> 
+                </div>
+                <div class="transform-uppercase">
+                    русский / english
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer class="Footer">
-        <div class="FooterOnas OpenSans">
-            <h3>О&nbsp;КОМПАНИИ</h3>
-            <a href="About.html">О&nbsp;нас</a>
-            <a href="Collections.html">Коллекции</a>
-            <a href="Partners.html">Партнеры</a>
-            <a href="Contacs.html">Контакты</a>
-        </div>
-        <div class="FooterHelp OpenSans">
-            <h3>ПОМОЩЬ</h3>
-            <a href="">Таблица&nbsp;размеров</a>
-            <a href="">Доставка&nbsp;и&nbsp;оплата</a>
-            <a href="">Возврат&nbsp;и&nbsp;обмен</a>
-        </div>
-        <div class="FooterDocs OpenSans">
-            <h3>СОГЛАШЕНИЯ</h3>
-            <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
-            <a href="">Политика&nbsp;конфиденциальности</a>
-        </div>
-    </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/Main.js"></script>
-    <script src="./js/CouseItem.js"></script>
 </body>
 </html>

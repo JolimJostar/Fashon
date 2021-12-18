@@ -99,8 +99,16 @@ button{
     font-weight: 600;
 }
 
+.Size0{
+    font-size: 0;
+}
+
 .Size10{
     font-size: 10px;
+}
+
+.Size11{
+    font-size: 11px;
 }
 
 .Size12{
@@ -123,8 +131,217 @@ button{
     font-size: 36px;
 }
 
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.z-999{
+    z-index: 999 !important;
+}
+
+.z-99{
+    z-index: 99 !important;
+}
+
+.top-0{
+    top: 0;
+}
+
+.top--34{
+    top: -34px;
+}
+
+.left-0{
+    left: 0;
+}
+
+.bottom-0{
+    bottom: 0;
+}
+
+.margin-0-auto{
+    margin: 0 auto;
+}
+
+.p-0-16{
+    padding: 0 16px;
+}
+
+.pb-34{
+    padding-bottom: 34px;
+}
+
+.pl-30{
+    padding-left: 30px;
+}
+
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.pb-16{
+    padding-bottom: 16px;
+}
+
+.pt-11{
+    padding-top: 11px;
+}
+
+.pb-4{
+    padding-bottom: 4px;
+}
+
+.mt-91{
+    margin-top: 91px;
+}
+
+.mt-35{
+    margin-top: 35px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.width-vw{
+    width: 100vw;
+}
+
+.width-full{
+    width: 100%;
+}
+
+.max-width-fit{
+    max-width: fit-content;
+}
+
+.max-width-970{
+    max-width: 970px;
+}
+
+.max-width-673{
+    width: 673px;
+}
+
+.max-width-570{
+    width: 570px;
+}
+
+.max-width-287{
+    max-width: 287px;
+}
+
+.height-vh{
+    height: 100vh;
+}
+
+.h-70{
+    height: 70px;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-columns-1fr-1fr{
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.col-gap-4{
+    column-gap: 4px;
+}
+
+.row-gap-50{
+    row-gap: 50px;
+}
+
+.row-gap-33{
+    row-gap: 33px;
+}
+
+.row-gap-20{
+    row-gap: 20px;
+}
+
+.row-gap-12{
+    row-gap: 12px;
+}
+
+.row-gap-7{
+    row-gap: 7px;
+}
+
+.row-gap-5{
+    row-gap: 5px;
+}
+
+.self-end{
+    align-self: flex-end;
+}
+
+.bg-gray{
+    background: rgba(90, 84, 80, 0.47);
+}
+
+.bg-white{
+    background: white;
+}
+
+.borderbottom-1px-solid-362B23{
+    border-bottom: 1px solid #362B23;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.transform-uppercase{
+    text-transform: uppercase;
+}
+
+.decoration-line{
+    text-decoration-line: underline;
+}
+
+.main-letterspace{
+    letter-spacing: 0.185em;
+}
+
+.translate{
+    transition: 0.3s ease-in-out all;
+}
+
 .MainColor{
-    color: #362B23;;
+    color: #362B23;
 }
 
 #Container {
@@ -224,6 +441,14 @@ button{
     line-height: 29px;
     letter-spacing: 0.185em;
     text-align: left;   
+}
+
+#Partners{
+    display: none;
+}
+
+#Burger{
+    display: none;
 }
 
 .NavigationHolder{
@@ -531,17 +756,15 @@ button{
 }
 
 .MainContentContakti{
-    padding-bottom: 291px;
-    height: 1519px;
-    padding-left: 135px;
-    padding-right: 135px;
+    width: 1170px;
+    padding-bottom: 80px;
 }
 
 .ContaktiImg{
     position: relative;
     width: 1170px;
     height: 462px;
-    background-image: url(./Img/Static/Контакты\ Картинка.png);
+    background-image: url(/Img/Static/Контакты\ Картинка.jpg);
     background-size: contain;
     display: flex;
     justify-content: center;
@@ -618,17 +841,15 @@ button{
 
 .MainContentAbout{
     padding-bottom: 291px;
+    padding-top: 34px;
     height: 2376px;
-    padding-left: 135px;
-    padding-right: 135px;
     background-color: rgba(245, 240, 235, 0.5);
     z-index: -3;
 }
 
 .PersonalBlock{
+    margin: 0 auto;
     position: relative;
-    top: 34px;
-    left: 200px;
     background-color: rgba(175, 196, 192, 0.43);
     width: 770px;
     height: 531px;
@@ -657,7 +878,7 @@ button{
 
 .AboutUs{
     position: relative;
-    top: 100px;
+    margin-top: 100px;
     height: 459px;
 }
 
@@ -666,23 +887,30 @@ button{
     height: 268px;
     position: absolute;
     top: 71px;
-    left: -135px;
     z-index: 0;
     background: linear-gradient(90.84deg, #DBCAD1 46.85%, rgba(219, 202, 209, 0) 114.82%);
+}
+
+.AboutUsHolder{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 auto;
+    width: 1170px;
 }
 
 .AboutUsImg{
     z-index: 1;
     width: 570px;
     height: 419px;
-    position: absolute;
+    position: relative;
     top: 40px;
 }
 
 .AboutUsText{
     z-index: 2;
-    position: absolute;
-    left: 500px;
+    position: relative;
+    right: 70px;
     width: 570px;
     height: 380px;
     background-color: white;
@@ -712,10 +940,11 @@ button{
 }
 
 .Principi{
-    position: absolute;
-    top: 1441px;;
+    position: relative;
     width: 1170px;
     height: 343px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .PrincipiH1{
@@ -762,8 +991,9 @@ button{
 }
 
 .DostupKCenam{
-    position: absolute;
-    top: 1887px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
     width: 1170px;
     height: 703px;
 }
@@ -943,8 +1173,8 @@ button{
 }
 
 .CollectionMainContent {
-    padding-left: 135px;
-    padding-right: 135px;
+    margin: 0 auto;
+    max-width: 1170px;
     display: grid;
     column-gap: 98px;
     row-gap: 140px;
@@ -953,6 +1183,7 @@ button{
 }
 
 .ItemCard{
+    max-width: 536px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -987,8 +1218,7 @@ button{
 
 .ChouseItemMainContent {
     padding-bottom: 100px;
-    padding-left: 246px;
-    right: 151px;
+    padding-left: 100px;
     display: flex;
     background: rgba(245, 240, 235, 0.5);
 }
@@ -1191,12 +1421,29 @@ ul {
     display: flex;
 }
 
+.MenuPhone{
+    display: none;
+}
+
+.FooterMobile{
+    display: none;
+}
+
 .Footer{
     color: #FFFFFF;
     background-color: #495D59;
     height: 291px;
-    width: 1440px;
     position: absolute;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.FooterHolder{
+    padding:  0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .Footer a{
@@ -1218,31 +1465,22 @@ ul {
 .FooterOnas{
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 157px;
     height: 189px;
-    left: 134px;
-    top: 61px;
 }
 
 .FooterHelp{
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 210px;
     height: 168px;
-    left: 534px;
-    top: 61px;
 }
 
 .FooterDocs{
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 356px;
     height: 113px;
-    left: 934px;
-    top: 61px;
 }
 
 .Show{
@@ -1258,7 +1496,7 @@ ul {
 }
 
 .Hidden{
-    display: none;
+    display: none !important;
 }
 
 .HrefBtn{
@@ -1268,7 +1506,8 @@ ul {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	padding: 11px 20px;
-	display: inline-block;
+	display: block;
+    max-width: fit-content;
     font-size: 14px;
     letter-spacing: 0.185em;
     color: #362B23;
@@ -1283,6 +1522,11 @@ ul {
 	letter-spacing: 0.185em;
 	margin-top: 60px;
 }
+
+.CollectionsMain > a{
+    display: none;
+}
+
 .CollectionsMain{
 	margin-top: 100px;
     background: url(/Img/Static/MainPageCollectionBackground.png) no-repeat;
@@ -1290,14 +1534,13 @@ ul {
     text-align: center;
 }
 .MainContent{
-	width: 1440px;
 	margin: 0 auto;
 	padding: 0 0px 80px;
     margin: auto;
 }
 .MainContentPadding{
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
 }
 .CollectionMainCards div a p{
 	margin-top: 14px;
@@ -1625,13 +1868,15 @@ ul {
 
 .BlogBlock2{
     letter-spacing: 0.185em;
-    padding: 42px 433px;
+    padding: 42px 0;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
 .BB2Content{
+    margin: 0 auto;
+    max-width: 574px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -1650,7 +1895,7 @@ ul {
 }
 
 .BlogBlock3{
-    padding: 70px 235px 70px 135px;
+    padding: 70px 100px 70px 0;
     background: rgba(219, 202, 209, 0.43);
     display: flex;
     flex-direction: column;
@@ -1680,11 +1925,7 @@ ul {
 
 .BlogBLock4{
     letter-spacing: 0.185em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    padding: 75px 435px;
-    align-items: flex-end;
+    padding: 75px 0;
 }
 
 .BB4P{
@@ -1697,7 +1938,7 @@ ul {
 
 .BlogBlock5{
     letter-spacing: 0.185em;
-    padding: 50px 235px;
+    padding: 50px 0;
 }
 
 .BB5Holder{
@@ -1771,4 +2012,201 @@ ul {
     flex-direction: row;
     justify-content: center; 
     column-gap: 20px;   
+}
+
+@media screen and (max-width: 600px) {
+    .MenuPhone{
+        display: block;
+    }
+    .FooterMobile{
+        display: block;
+    }
+    .HeaderFull{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        background: white;
+        z-index: 9999;
+        height: 55px;
+    }
+    .SMHolder{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .NavigationHolder{
+        display: none;
+    }
+    .SearchBarHolder{
+        width: 130px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .SearchBar{
+        width: 100%;
+        
+    }
+    #SearchButton{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #SearchButton > img{
+        height: 10px;
+        width: 9px;
+    }
+    #Burger{
+        display: block;
+    }
+    #Partners{
+        display: block;
+    }
+    .Menu {
+        align-items: center;
+        width: unset;
+        display: flex;
+        flex-direction: row;
+        column-gap: 11px;
+    }
+    .Menu > a{
+        display: flex;
+        align-items: center;
+    }
+    .CartHolder{
+        width: 25px;
+        height: 22px;
+    }
+    .SMHolder{
+        padding: 0 14px;
+    }
+    .Hide{
+        transform: translateX(-100%);
+    }
+    #Partners > img{
+        width: 20px;
+        height: 20px;
+    }
+    #CartCount{
+        display: none;
+    }
+    #Favorite{
+        display: none;
+    }
+    #Account{
+        width: unset;
+        height: unset;
+    }
+    #Account > img{
+        width: 20px;
+        height: 20px;
+    }
+    #Cart{
+        height: 22px;
+        margin: 0;
+    }
+    #Logo{
+        width: 85px;
+        height: 55px;
+    }
+    .Footer{
+        display: none;
+    }
+    .FPDropdown{
+        max-height: 200px;
+        opacity: 1;
+    }
+    .VideoMain{
+        height: 276px;
+    }
+    .ProfileMain{
+        border: none;
+        width: unset;
+        margin: 15px 15px 0 15px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+        align-items: center;
+        justify-content: start;
+    }
+    .Face > img{
+        width: 111px;
+        height: 111px;
+    }
+    .Fio{
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin: 0;
+    }
+    .Fio > h2{
+        font-size: 12px;
+    }
+    .Fio > p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .Fio > a{
+        display: none;
+    }
+    .CollectionsMain{
+        display: none;
+    }
+    .ContactsMain{
+        display: none;
+    }
+    .HrefBtn{
+        background-color: #AFC4C0;
+        color: white;
+    }
+    .Unactive{
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .MainContentCollections{
+        padding-top: 55px;
+        margin-bottom: 0;
+    }
+    .CollectionCard{
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+    .LeftSideColCard{
+        width: 100vw;
+        padding-top: 28px;
+        padding-bottom: 38px;
+        row-gap: 30px;
+        height: unset;
+    }
+    .RightSideColCard{
+        height: unset;
+        width: 100vw;
+    }
+    .RightSideColCard > img{
+        width: 100vw;
+    }
+    .RightSideColCard > p {
+        top: unset;
+        bottom: 20%;
+    }
+    .LSCCT{
+        font-size: 10px;
+    }
+    .LSCCI{
+        width: 60%;
+    }
+    .ColectionCardBig{
+        display: none;
+    }
+    .CollectionMainContent{
+        display: none;
+    }
+    .CollectionMainContentPhone{
+        padding: 55px 13px 0 13px;
+    }
 }

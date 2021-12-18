@@ -13,216 +13,220 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
 </head>
 <body>
-    <div class="HeaderFull" id="HeaderFull">
-        <div class="SMHolder">
-            <div class="SearchBarHolder">
+    <div id="Container">
+        <div class="HeaderFull" id="HeaderFull">
+            <div class="SMHolder">
+                <div class="SearchBarHolder">
+                    <div class="SearchBar">
+                        <input type="text" class="HeaderSearchInput OpenSans">
+                        <button id="SearchButton">
+                            <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                        </button>
+                    </div>
+                </div>
+                <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
+            </div>
+            <div class="NavigationHolder"> 
+                    <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                    <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                    <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                    <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                    <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+            </div>
+        </div>
+        <div class="HeaderFolded" id="HeaderFolded">
+            <div class="HeaderFoldedItemsWrapper">
                 <div class="SearchBar">
                     <input type="text" class="HeaderSearchInput OpenSans">
                     <button id="SearchButton">
                         <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
                     </button>
                 </div>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-        <div class="NavigationHolder"> 
-                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
-                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
-                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
-                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
-                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
-        </div>
-    </div>
-    <div class="HeaderFolded" id="HeaderFolded">
-        <div class="HeaderFoldedItemsWrapper">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
-            </div>
-            <div class="NavigationFolded OpenSans">
-                <a href="MainPage.html">ГЛАВНАЯ</a>
-                <a href="About.html">О НАС</a>
-                <a href="Collections.html">КОЛЛЕКЦИИ</a>
-                <a href="Contacs.html">КОНТАКТЫ</a>
-                <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="Blog.html">БЛОГ</a>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
+                <div class="NavigationFolded OpenSans">
+                    <a href="MainPage.html">ГЛАВНАЯ</a>
+                    <a href="About.html">О НАС</a>
+                    <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html">КОНТАКТЫ</a>
+                    <a href="Partners.html">ПАРТНЕРЫ</a>
+                    <a href="Blog.html">БЛОГ</a>
+                </div>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="CartMainContent">
-        <div class="YourZakaz">
-            <div class="YZText Size18 TenorSans">
-                <p>Ваш заказ</p>
-            </div>
-            <div class="ZakazItems">
-                <div class="ZakazItem">
-                    <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                    <div class="ZIInfo">
-                        <button class="ZIDEelete TenorSans Size18">X</button>
-                        <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
-                        <div>
-                            <div class="ZIDetails">
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Size</p>
-                                    <p class="ZIDValue">42</p>
+        <div class="CartMainContent">
+            <div class="YourZakaz">
+                <div class="YZText Size18 TenorSans">
+                    <p>Ваш заказ</p>
+                </div>
+                <div class="ZakazItems">
+                    <div class="ZakazItem">
+                        <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
+                        <div class="ZIInfo">
+                            <button class="ZIDEelete TenorSans Size18">X</button>
+                            <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <div>
+                                <div class="ZIDetails">
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Size</p>
+                                        <p class="ZIDValue">42</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Color</p>
+                                        <p class="ZIDValue">White</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Amount</p>
+                                        <p class="ZIDValue">< 5 ></p>
+                                    </div>
                                 </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Color</p>
-                                    <p class="ZIDValue">White</p>
-                                </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Amount</p>
-                                    <p class="ZIDValue">< 5 ></p>
-                                </div>
-                            </div>
-                            <div class="ZIDengi  OpenSans Weight300 Size12">
-                                <div class="ZIZena">
-                                    <p>Цена</p>
-                                    <p>38.000 P</p>
-                                </div>
-                                <div class="ZISumm">
-                                    <p class="SummText">Сумма</p>
-                                    <p class="SummValue">38.000 P</p>
+                                <div class="ZIDengi  OpenSans Weight300 Size12">
+                                    <div class="ZIZena">
+                                        <p>Цена</p>
+                                        <p>38.000 P</p>
+                                    </div>
+                                    <div class="ZISumm">
+                                        <p class="SummText">Сумма</p>
+                                        <p class="SummValue">38.000 P</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ZakazItem">
-                    <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                    <div class="ZIInfo">
-                        <button class="ZIDEelete TenorSans Size18">X</button>
-                        <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
-                        <div>
-                            <div class="ZIDetails">
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Size</p>
-                                    <p class="ZIDValue">42</p>
+                    <div class="ZakazItem">
+                        <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
+                        <div class="ZIInfo">
+                            <button class="ZIDEelete TenorSans Size18">X</button>
+                            <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <div>
+                                <div class="ZIDetails">
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Size</p>
+                                        <p class="ZIDValue">42</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Color</p>
+                                        <p class="ZIDValue">White</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Amount</p>
+                                        <p class="ZIDValue">< 5 ></p>
+                                    </div>
                                 </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Color</p>
-                                    <p class="ZIDValue">White</p>
-                                </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Amount</p>
-                                    <p class="ZIDValue">< 5 ></p>
-                                </div>
-                            </div>
-                            <div class="ZIDengi  OpenSans Weight300 Size12">
-                                <div class="ZIZena">
-                                    <p>Цена</p>
-                                    <p>38.000 P</p>
-                                </div>
-                                <div class="ZISumm">
-                                    <p class="SummText">Сумма</p>
-                                    <p class="SummValue">38.000 P</p>
+                                <div class="ZIDengi  OpenSans Weight300 Size12">
+                                    <div class="ZIZena">
+                                        <p>Цена</p>
+                                        <p>38.000 P</p>
+                                    </div>
+                                    <div class="ZISumm">
+                                        <p class="SummText">Сумма</p>
+                                        <p class="SummValue">38.000 P</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ZakazItem">
-                    <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                    <div class="ZIInfo">
-                        <button class="ZIDEelete TenorSans Size18">X</button>
-                        <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
-                        <div>
-                            <div class="ZIDetails">
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Size</p>
-                                    <p class="ZIDValue">42</p>
+                    <div class="ZakazItem">
+                        <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
+                        <div class="ZIInfo">
+                            <button class="ZIDEelete TenorSans Size18">X</button>
+                            <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <div>
+                                <div class="ZIDetails">
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Size</p>
+                                        <p class="ZIDValue">42</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Color</p>
+                                        <p class="ZIDValue">White</p>
+                                    </div>
+                                    <div class="ZIDetail OpenSans Weight300 Size12">
+                                        <p class="Text">Amount</p>
+                                        <p class="ZIDValue">< 5 ></p>
+                                    </div>
                                 </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Color</p>
-                                    <p class="ZIDValue">White</p>
-                                </div>
-                                <div class="ZIDetail OpenSans Weight300 Size12">
-                                    <p class="Text">Amount</p>
-                                    <p class="ZIDValue">< 5 ></p>
-                                </div>
-                            </div>
-                            <div class="ZIDengi  OpenSans Weight300 Size12">
-                                <div class="ZIZena">
-                                    <p>Цена</p>
-                                    <p>38.000 P</p>
-                                </div>
-                                <div class="ZISumm">
-                                    <p class="SummText">Сумма</p>
-                                    <p class="SummValue">38.000 P</p>
+                                <div class="ZIDengi  OpenSans Weight300 Size12">
+                                    <div class="ZIZena">
+                                        <p>Цена</p>
+                                        <p>38.000 P</p>
+                                    </div>
+                                    <div class="ZISumm">
+                                        <p class="SummText">Сумма</p>
+                                        <p class="SummValue">38.000 P</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <form action="" class="Dannie">
+                <div class="DText TenorSans Size18">Данные заказа</div>
+                <div class="DInputFields OpenSans Size12">
+                    <div class="DIFInput">
+                        <p>Фамилия</p>
+                        <input type="text">
+                    </div>
+                    <div class="DIFInput">
+                        <p>Имя</p>
+                        <input type="text">
+                    </div>
+                    <div class="DIFInput">
+                        <p>Электронный адрес</p>
+                        <input type="email">
+                    </div>
+                    <div class="DIFInput">
+                        <p>Телефон</p>
+                        <input type="tel">
+                    </div>
+                    <div class="DIFInput">
+                        <p>Адрес доставки</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="Summ OpenSans">
+                    <p class="Size12">Для минимального заказа необходимо выбрать 8 платьев</p>
+                    <div class="SummItog Size12 OpenSans">
+                        <p>ИТОГО К ОПЛАТЕ</p>
+                        <p>............................</p>
+                        <p>114 000 Р</p>
+                    </div>
+                    <div class="SICheckbox">
+                        <input type="checkbox" >
+                        <p class="OpenSans Size12">Я подтверждаю, что ознакомлен(-а) с правилами конфиденциальности (Правила конфиденциальности)</p>
+                    </div>
+                    <button class="DIFButton">ЗАКАЗАТЬ</button>
+                </div>
+            </form>
         </div>
-        <form action="" class="Dannie">
-            <div class="DText TenorSans Size18">Данные заказа</div>
-            <div class="DInputFields OpenSans Size12">
-                <div class="DIFInput">
-                    <p>Фамилия</p>
-                    <input type="text">
-                </div>
-                <div class="DIFInput">
-                    <p>Имя</p>
-                    <input type="text">
-                </div>
-                <div class="DIFInput">
-                    <p>Электронный адрес</p>
-                    <input type="email">
-                </div>
-                <div class="DIFInput">
-                    <p>Телефон</p>
-                    <input type="tel">
-                </div>
-                <div class="DIFInput">
-                    <p>Адрес доставки</p>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="Summ OpenSans">
-                <p class="Size12">Для минимального заказа необходимо выбрать 8 платьев</p>
-                <div class="SummItog Size12 OpenSans">
-                    <p>ИТОГО К ОПЛАТЕ</p>
-                    <p>............................</p>
-                    <p>114 000 Р</p>
-                </div>
-                <div class="SICheckbox">
-                    <input type="checkbox" >
-                    <p class="OpenSans Size12">Я подтверждаю, что ознакомлен(-а) с правилами конфиденциальности (Правила конфиденциальности)</p>
-                </div>
-                <button class="DIFButton">ЗАКАЗАТЬ</button>
-            </div>
-        </form>
     </div>
 </body>
 </html>

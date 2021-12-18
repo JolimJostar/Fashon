@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Коллекции</title>
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/Main.js"></script>
     <link rel="stylesheet" href="./css/MainStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,145 +17,204 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="HeaderFull" id="HeaderFull">
-        <div class="SMHolder">
-            <div class="SearchBarHolder">
+    <div id="Container">
+        <div class="HeaderFull" id="HeaderFull">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+    
+                <div class="SearchBarHolder Hidden">
+                    <div class="SearchBar">
+                        <input type="text" class="HeaderSearchInput OpenSans">
+                        <button id="SearchButton">
+                            <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
+                        </button>
+                    </div>
+                </div>
+                <img id="Logo"src="./Img/Static/Logo.png" alt="">
+                <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
+                </div>
+            </div>
+            <div class="NavigationHolder"> 
+                    <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
+                    <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
+                    <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
+                    <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
+                    <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
+            </div>
+        </div>
+        <div class="HeaderFolded" id="HeaderFolded">
+            <div class="HeaderFoldedItemsWrapper">
                 <div class="SearchBar">
                     <input type="text" class="HeaderSearchInput OpenSans">
                     <button id="SearchButton">
                         <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
                     </button>
                 </div>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
-            </div>
-        </div>
-        <div class="NavigationHolder"> 
-                <a href="MainPage.html" class="NavButton OpenSans" id="Glavnaya" >ГЛАВНАЯ</a>
-                <a href="About.html" class="NavButton OpenSans" id="Onas" >О НАС</a>
-                <a href="Collections.html" class="NavButton OpenSans" id="Colekcii" >КОЛЛЕКЦИИ</a>
-            <img id="Logo"src="./Img/Static/Logo.png" alt="">
-                <a href="Contacs.html" class="NavButton OpenSans" id="Kontakti" >КОНТАКТЫ</a>
-                <a href="Partners.html" class="NavButton OpenSans" id="Partneri" >ПАРТНЕРЫ</a>
-                <a href="Blog.html" class="NavButton OpenSans"  >БЛОГ</a>
-        </div>
-    </div>
-    <div class="HeaderFolded" id="HeaderFolded">
-        <div class="HeaderFoldedItemsWrapper">
-            <div class="SearchBar">
-                <input type="text" class="HeaderSearchInput OpenSans">
-                <button id="SearchButton">
-                    <img src="./Img/Static/SeacrhIcon.svg" alt=""> 
-                </button>
-            </div>
-            <div class="NavigationFolded OpenSans">
-                <a href="MainPage.html">ГЛАВНАЯ</a>
-                <a href="About.html">О НАС</a>
-                <a href="Collections.html">КОЛЛЕКЦИИ</a>
-                <a href="Contacs.html">КОНТАКТЫ</a>
-                <a href="Partners.html">ПАРТНЕРЫ</a>
-                <a href="Blog.html">БЛОГ</a>
-            </div>
-            <div class="Menu">
-                <a href="account.html" id="Account">
-                    <img src="/Img/Static/Account.svg" alt="">
-                </a>
-                <a href="favorite.html" id="Favorite" >
-                    <img src="/Img/Static/Favorite.svg" alt="">
-                </a>
-                <a href="cart.html" class="CartHolder">
-                    <img id="Cart" src="/Img/Static/Cart.svg" alt="">
-                    <p id="CartCount">5</p>
-                </a>
+                <div class="NavigationFolded OpenSans">
+                    <a href="MainPage.html">ГЛАВНАЯ</a>
+                    <a href="About.html">О НАС</a>
+                    <a href="Collections.html">КОЛЛЕКЦИИ</a>
+                    <a href="Contacs.html">КОНТАКТЫ</a>
+                    <a href="Partners.html">ПАРТНЕРЫ</a>
+                    <a href="Blog.html">БЛОГ</a>
+                </div>
+                <div class="Menu">
+                    <a href="account.html" id="Account">
+                        <img src="/Img/Static/Account.svg" alt="">
+                    </a>
+                    <a href="favorite.html" id="Favorite" >
+                        <img src="/Img/Static/Favorite.svg" alt="">
+                    </a>
+                    <a href="cart.html" class="CartHolder">
+                        <img id="Cart" src="/Img/Static/Cart.svg" alt="">
+                        <p id="CartCount">5</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="MainContentCollections">
-        <div class="CollectionCard">
-            <div class="LeftSideColCard">
-                <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
-                <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
-                <button class="LSCCB OpenSans Weight600 Size14"  onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+        <div class="MainContentCollections">
+            <div class="CollectionCard">
+                <div class="LeftSideColCard">
+                    <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
+                    <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
+                    <button class="LSCCB OpenSans Weight600 Size14"  onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+                </div>
+                <div class="RightSideColCard">
+                    <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
+                    <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+                </div>
             </div>
-            <div class="RightSideColCard">
-                <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
-                <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+            <div class="CollectionCard Inverse">
+                <div class="LeftSideColCard">
+                    <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
+                    <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
+                    <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+                </div>
+                <div class="RightSideColCard">
+                    <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
+                    <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+                </div>
             </div>
-        </div>
-        <div class="CollectionCard Inverse">
-            <div class="LeftSideColCard">
-                <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
-                <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
+            <div class="ColectionCardBig">
+                <img src="Img/Коллекции задняя картинка.png" alt="" class="Background">
+                <p class="CCBT TenorSans Weight400 Size24">осень - зима 2022</p>
+                <div class="CCBSC">
+                    <img src="./Img/Коллекции мал картинка 2.png" alt="">
+                    <p class="CCBCST TenorSans Weight400 Size24">Starry sky</p>
+                </div>
                 <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
             </div>
-            <div class="RightSideColCard">
-                <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
-                <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+            <div class="CollectionCard">
+                <div class="LeftSideColCard">
+                    <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
+                    <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
+                    <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+                </div>
+                <div class="RightSideColCard">
+                    <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
+                    <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+                </div>
+            </div>
+            <div class="CollectionCard Inverse">
+                <div class="LeftSideColCard">
+                    <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
+                    <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
+                    <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+                </div>
+                <div class="RightSideColCard">
+                    <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
+                    <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+                </div>
             </div>
         </div>
-        <div class="ColectionCardBig">
-            <img src="Img/Коллекции задняя картинка.png" alt="" class="Background">
-            <p class="CCBT TenorSans Weight400 Size24">осень - зима 2022</p>
-            <div class="CCBSC">
-                <img src="./Img/Коллекции мал картинка 2.png" alt="">
-                <p class="CCBCST TenorSans Weight400 Size24">Starry sky</p>
+        <footer class="Footer">
+            <div class="FooterHolder">
+                <div class="FooterOnas OpenSans">
+                    <h3>О&nbsp;КОМПАНИИ</h3>
+                    <a href="About.html">О&nbsp;нас</a>
+                    <a href="Collections.html">Коллекции</a>
+                    <a href="Partners.html">Партнеры</a>
+                    <a href="Contacs.html">Контакты</a>
+                </div>
+                <div class="FooterHelp OpenSans">
+                    <h3>ПОМОЩЬ</h3>
+                    <a href="">Таблица&nbsp;размеров</a>
+                    <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+                    <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+                </div>
+                <div class="FooterDocs OpenSans">
+                    <h3>СОГЛАШЕНИЯ</h3>
+                    <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+                    <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
             </div>
-            <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
-        </div>
-        <div class="CollectionCard">
-            <div class="LeftSideColCard">
-                <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
-                <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
-                <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
+        </footer>
+        <footer class="FooterMobile text-center pt-20 pb-16 row-gap-33 flex flex-col">
+            <div class="flex flex-col row-gap-12">
+                <div class="flex flex-col items-center">
+                    <button class="max-width-fit btnFooter decoration-line">    
+                        <h1>Политика</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive" >
+                        <a class="decoration-line" href="">Согласие на обработку пнд</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter ">
+                        <h1>Компания</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <a href="About.html">О нас</a>
+                        <a href="Partners.html">партнеры</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter">
+                        <h1>Контакты</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <p>+7 012 345-67-89</p>
+                        <p>abvgd@yandex.ru</p>
+                    </div>
+                </div>
             </div>
-            <div class="RightSideColCard">
-                <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
-                <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
+            <div class="flex justify-end">
+                <div>
+                   <img height="11px" width="11px" src="Img/Static/WebsiteIcon.svg" alt=""> 
+                </div>
+                <div class="transform-uppercase">
+                    русский / english
+                </div>
             </div>
-        </div>
-        <div class="CollectionCard Inverse">
-            <div class="LeftSideColCard">
-                <p class="LSCCT TenorSans Weight400 Size18">осень - зима 2022</p>
-                <img src="./Img/Коллекции мал картинка 1.png" alt="" class="LSCCI">
-                <button class="LSCCB OpenSans Weight600 Size14" onclick="window.location.href='./Collection.html';">СМОТРЕТЬ КОЛЛЕКЦИЮ</button>
-            </div>
-            <div class="RightSideColCard">
-                <img src="./Img/Коллекции бол картинка 1.png" alt="" class="RSCCI">
-                <p class="RSCCT TenorSans Weight400 Size24">Starry sky</p>
-            </div>
-        </div>
+        </footer>
     </div>
-    <footer class="Footer">
-        <div class="FooterOnas OpenSans">
-            <h3>О&nbsp;КОМПАНИИ</h3>
-            <a href="About.html">О&nbsp;нас</a>
-            <a href="Collections.html">Коллекции</a>
-            <a href="Partners.html">Партнеры</a>
-            <a href="Contacs.html">Контакты</a>
-        </div>
-        <div class="FooterHelp OpenSans">
-            <h3>ПОМОЩЬ</h3>
-            <a href="">Таблица&nbsp;размеров</a>
-            <a href="">Доставка&nbsp;и&nbsp;оплата</a>
-            <a href="">Возврат&nbsp;и&nbsp;обмен</a>
-        </div>
-        <div class="FooterDocs OpenSans">
-            <h3>СОГЛАШЕНИЯ</h3>
-            <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
-            <a href="">Политика&nbsp;конфиденциальности</a>
-        </div>
-    </footer>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/Main.js"></script>
 </body>
 </html>

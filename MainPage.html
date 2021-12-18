@@ -19,8 +19,14 @@
 <body>
     <div id="Container">
         <div class="HeaderFull" id="HeaderFull">
-            <div class="SMHolder">
-                <div class="SearchBarHolder">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+
+                <div class="SearchBarHolder Hidden">
                     <div class="SearchBar">
                         <input type="text" class="HeaderSearchInput OpenSans">
                         <button id="SearchButton">
@@ -30,6 +36,9 @@
                 </div>
                 <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
                     <a href="account.html" id="Account">
                         <img src="/Img/Static/Account.svg" alt="">
                     </a>
@@ -40,6 +49,15 @@
                         <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                         <p id="CartCount">5</p>
                     </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
                 </div>
             </div>
             <div class="NavigationHolder"> 
@@ -95,6 +113,12 @@
                         <p class="OpenSans Weight300 Size24">Founder / Artdirector</p>
                         <a href="About.html" class="OpenSans Weight400 Size14 HrefBtn">ПОДРОБНЕЕ</a>
                     </div>
+                </div>
+                <div class="HrefBtn mt-20 TenorSans Weight400 Size14 margin-0-auto block">
+                    <a href="About.html">о компании</a>
+                </div>
+                <div class="borderbottom-1px-solid-362B23 pb-4 margin-0-auto max-width-287 text-center mt-35">
+                    <a class="OpenSans Size11 transform-uppercase main-letterspace" href="Blog.html">Читать последние новости в блоге</a>
                 </div>
                 <div class="CollectionsMain">
                     <div class="CollectionMainCards">
@@ -170,23 +194,64 @@
             </div>
         </div>
         <footer class="Footer">
-            <div class="FooterOnas OpenSans">
-                <h3>О&nbsp;КОМПАНИИ</h3>
-                <a href="About.html">О&nbsp;нас</a>
-                <a href="Collections.html">Коллекции</a>
-                <a href="Partners.html">Партнеры</a>
-                <a href="Contacs.html">Контакты</a>
+            <div class="FooterHolder">
+                <div class="FooterOnas OpenSans">
+                    <h3>О&nbsp;КОМПАНИИ</h3>
+                    <a href="About.html">О&nbsp;нас</a>
+                    <a href="Collections.html">Коллекции</a>
+                    <a href="Partners.html">Партнеры</a>
+                    <a href="Contacs.html">Контакты</a>
+                </div>
+                <div class="FooterHelp OpenSans">
+                    <h3>ПОМОЩЬ</h3>
+                    <a href="">Таблица&nbsp;размеров</a>
+                    <a href="">Доставка&nbsp;и&nbsp;оплата</a>
+                    <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+                </div>
+                <div class="FooterDocs OpenSans">
+                    <h3>СОГЛАШЕНИЯ</h3>
+                    <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
+                    <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
             </div>
-            <div class="FooterHelp OpenSans">
-                <h3>ПОМОЩЬ</h3>
-                <a href="">Таблица&nbsp;размеров</a>
-                <a href="">Доставка&nbsp;и&nbsp;оплата</a>
-                <a href="">Возврат&nbsp;и&nbsp;обмен</a>
+        </footer>
+        <footer class="FooterMobile text-center pt-20 pb-16 row-gap-33 flex flex-col">
+            <div class="flex flex-col row-gap-12">
+                <div class="flex flex-col items-center">
+                    <button class="max-width-fit btnFooter decoration-line">    
+                        <h1>Политика</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive" >
+                        <a class="decoration-line" href="">Согласие на обработку пнд</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter ">
+                        <h1>Компания</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <a href="About.html">О нас</a>
+                        <a href="Partners.html">партнеры</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter">
+                        <h1>Контакты</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <p>+7 012 345-67-89</p>
+                        <p>abvgd@yandex.ru</p>
+                    </div>
+                </div>
             </div>
-            <div class="FooterDocs OpenSans">
-                <h3>СОГЛАШЕНИЯ</h3>
-                <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
-                <a href="">Политика&nbsp;конфиденциальности</a>
+            <div class="flex justify-end">
+                <div>
+                   <img height="11px" width="11px" src="Img/Static/WebsiteIcon.svg" alt=""> 
+                </div>
+                <div class="transform-uppercase">
+                    русский / english
+                </div>
             </div>
         </footer>
     </div>
