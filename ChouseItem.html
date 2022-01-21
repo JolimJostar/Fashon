@@ -12,10 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script defer src="./js/jquery.min.js"></script>
     <script defer src="./js/Main.js"></script>
     <script defer src="./js/CouseItem.js"></script>
+    <script defer type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 <body>
     <div id="Container">
@@ -208,6 +211,59 @@
                     </div>
                     
                 </div>
+            </div>
+        </div>
+        <div class="ChouseItemMainContentPhone Phone main-letterspace">
+            <div class="mySlider">
+                <div style="overflow: hidden;"><img style="width: 100%; height: 370px;" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" alt=""></div>
+                <div style="overflow: hidden;""><img style="width: 100%; height: 370px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt=""></div>
+            </div>
+            <div class="CIMCP OpenSans MainColor">
+                <h1 class="Weight400 Size24 mb-12">Лиана</h1>
+                <div class="flex flex-row justify-between items-center mb-17">
+                    <p class="Weight400 Size12 ">₽35.000</p>
+                    <div class="width-24 h-32">
+                        <img class="width-full" src="Img/Static/Favorite.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-row mb-21">
+                    <div class="px-5 relative custom-select border borderright-0 borderleft-0 OpenSans Size12 Weight300 flex flex-row">
+                        <select>
+                          <option value="0">Белый</option>
+                          <option value="1">Белый</option>
+                          <option value="2">Красный</option>
+                          <option value="3">Синий</option>
+                        </select>
+                        <div class="border-round top-50 right-24 -translateY-50 border absolute h-20 w-20"></div>
+                    </div>
+                    <div class="px-5 relative custom-select border borderright-0 OpenSans Size12 Weight300">
+                        <select>
+                          <option value="0">Размер</option>
+                          <option value="1">s</option>
+                          <option value="2">m</option>
+                        </select>
+                        <div class="absolute -translateY-50 right-7 top-50"><img src="Img/Static/Dropdown.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="Weight400 pb-16 borderbottom-1px-solid-362B23 mb-15">
+                    <p class=" Size10 MainColor-60 mb-21">OПИСАНИЕ</p>
+                    <p class="Size12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                </div>
+                <div class="flex flex-row justify-center items-center mb-15">
+                    <div class="width-24 h-24 border-custom border-round flex justify-center items-center mr-11">
+                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1H14" stroke="#362B23"/>
+                        </svg>
+                    </div>
+                    <p class="mr-11">1</p>
+                    <div class="width-24 h-24 border-custom border-round flex justify-center items-center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 7H14" stroke="#362B23"/>
+                            <path d="M7 0V14" stroke="#362B23"/>
+                        </svg>
+                    </div>
+                </div>
+                <button class="py-7 width-full max-width-full MainColor bg-main-button Size14 Weight400">В КОРЗИНУ</button>
             </div>
         </div>
         <footer class="Footer">

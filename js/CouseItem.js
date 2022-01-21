@@ -5,6 +5,13 @@ function ChangePic(img) {
 
 $(document).ready(function() {
 
+  $('.mySlider').slick({
+    dots: true,
+    mobileFirst: true,
+    prevArrow: '<div class="rotate-180 slick-prev"><img style="width:100%; height: 100%;" src="Img/Static/PhoneItemArrow.svg" alt=""></div>',
+    nextArrow: '<div class="slick-next"><img style="width:100%; height: 100%;" src="Img/Static/PhoneItemArrow.svg" alt=""></div>'
+  });
+
     $(".PlusArrow").click(function() {
         if ($(this).siblings('.Count')[0].innerHTML < 10) {
             $(this).siblings('.Count')[0].innerHTML = parseInt($(this).siblings('.Count')[0].innerHTML) + 1
