@@ -19,8 +19,14 @@
 <body>
     <div id="Container">
         <div class="HeaderFull" id="HeaderFull">
-            <div class="SMHolder">
-                <div class="SearchBarHolder">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+
+                <div class="SearchBarHolder Hidden">
                     <div class="SearchBar">
                         <input type="text" class="HeaderSearchInput OpenSans">
                         <button id="SearchButton">
@@ -30,6 +36,9 @@
                 </div>
                 <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
                     <a href="account.html" id="Account">
                         <img src="/Img/Static/Account.svg" alt="">
                     </a>
@@ -40,6 +49,15 @@
                         <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                         <p id="CartCount">5</p>
                     </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
                 </div>
             </div>
             <div class="NavigationHolder"> 
@@ -89,9 +107,10 @@
                 <div class="ZakazItems">
                     <div class="ZakazItem">
                         <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                        <div class="ZIInfo">
+                        <div class="ZIInfo OpenSans">
                             <button class="ZIDEelete TenorSans Size18">X</button>
                             <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <h2 class="Phone Size12 Weight400">₽30.000</h2>
                             <div>
                                 <div class="ZIDetails">
                                     <div class="ZIDetail OpenSans Weight300 Size12">
@@ -117,14 +136,50 @@
                                         <p class="SummValue">38.000 P</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="Phone ZIInfoPhone ">
+                            <div class="OpenSans Weight400 Size12">
+                                <h2>Аврил</h2>
+                                <h2>₽30.000</h2>
+                            </div>
+                            <div class="OpenSans Weight400">
+                                <div class="flex flex-row justify-between">
+                                    <div class="grid col-gap-10 grid-columns-1fr-1fr Size9 gray-color MainColor-60">
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>размер:</p>
+                                            <p>цвет:</p>
+                                        </div>
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>42</p>
+                                            <p>белый</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-center items-center mb-15">
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center mr-11">
+                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 1H14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                        <p class="mr-11">1</p>
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 7H14" stroke="#362B23"/>
+                                                <path d="M7 0V14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="Size10">Сумма: ₽90.000</h2>
                             </div>
                         </div>
                     </div>
                     <div class="ZakazItem">
                         <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                        <div class="ZIInfo">
+                        <div class="ZIInfo OpenSans">
                             <button class="ZIDEelete TenorSans Size18">X</button>
                             <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <h2 class="Phone Size12 Weight400">₽30.000</h2>
                             <div>
                                 <div class="ZIDetails">
                                     <div class="ZIDetail OpenSans Weight300 Size12">
@@ -150,14 +205,50 @@
                                         <p class="SummValue">38.000 P</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="Phone ZIInfoPhone ">
+                            <div class="OpenSans Weight400 Size12">
+                                <h2>Аврил</h2>
+                                <h2>₽30.000</h2>
+                            </div>
+                            <div class="OpenSans Weight400">
+                                <div class="flex flex-row justify-between">
+                                    <div class="grid col-gap-10 grid-columns-1fr-1fr Size9 gray-color MainColor-60">
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>размер:</p>
+                                            <p>цвет:</p>
+                                        </div>
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>42</p>
+                                            <p>белый</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-center items-center mb-15">
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center mr-11">
+                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 1H14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                        <p class="mr-11">1</p>
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 7H14" stroke="#362B23"/>
+                                                <path d="M7 0V14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="Size10">Сумма: ₽90.000</h2>
                             </div>
                         </div>
                     </div>
                     <div class="ZakazItem">
                         <div class="ZIImage" style="background-image: url(./Img/Корзина\ Картинка.png)"></div>
-                        <div class="ZIInfo">
+                        <div class="ZIInfo OpenSans">
                             <button class="ZIDEelete TenorSans Size18">X</button>
                             <h2 class="ZIName TenorSans Weight400 Size12">Аврил</h2>
+                            <h2 class="Phone Size12 Weight400">₽30.000</h2>
                             <div>
                                 <div class="ZIDetails">
                                     <div class="ZIDetail OpenSans Weight300 Size12">
@@ -185,7 +276,45 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="Phone ZIInfoPhone ">
+                            <div class="OpenSans Weight400 Size12">
+                                <h2>Аврил</h2>
+                                <h2>₽30.000</h2>
+                            </div>
+                            <div class="OpenSans Weight400">
+                                <div class="flex flex-row justify-between">
+                                    <div class="grid col-gap-10 grid-columns-1fr-1fr Size9 gray-color MainColor-60">
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>размер:</p>
+                                            <p>цвет:</p>
+                                        </div>
+                                        <div class="flex flex-col row-gap-4">
+                                            <p>42</p>
+                                            <p>белый</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-center items-center mb-15">
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center mr-11">
+                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 1H14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                        <p class="mr-11">1</p>
+                                        <div class="width-24 h-24 border-custom border-round flex justify-center items-center">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 7H14" stroke="#362B23"/>
+                                                <path d="M7 0V14" stroke="#362B23"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="Size10">Сумма: ₽90.000</h2>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="width-full px-25 mt-25">
+                    <button class="Phone Roboto Weight300 Size12 border border-4F4040 py-14 flex items-center width-full">Перейти к оформлению</button>
                 </div>
             </div>
             <form action="" class="Dannie">
