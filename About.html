@@ -19,8 +19,14 @@
 <body>
     <div id="Container">
         <div class="HeaderFull" id="HeaderFull">
-            <div class="SMHolder">
-                <div class="SearchBarHolder">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+
+                <div class="SearchBarHolder Hidden">
                     <div class="SearchBar">
                         <input type="text" class="HeaderSearchInput OpenSans">
                         <button id="SearchButton">
@@ -30,6 +36,9 @@
                 </div>
                 <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
                     <a href="account.html" id="Account">
                         <img src="/Img/Static/Account.svg" alt="">
                     </a>
@@ -40,6 +49,15 @@
                         <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                         <p id="CartCount">5</p>
                     </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
                 </div>
             </div>
             <div class="NavigationHolder"> 
@@ -87,7 +105,28 @@
                     <h1 class="PersonalBlockTextH1 TenorSans Weight400 Size24">Наталья Градова</h1>
                     <p class="PersonalBlockTextP OpenSans Weight300 Size16">Есть над чем задуматься: ключевые особенности структуры проекта являются только методом политического участия и в равной степени предоставлены сами себе. А также действия представителей оппозиции разоблачены. Как принято считать, некоторые особенности внутренней политики смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Имеется спорная точка зрения, гласящая примерно следующее: независимые государства обнародованы.</p>
                 </div>
-                <div class="PersonalBlockImg">
+                <div class="PersonalBlockImg TenorSans main-letterspace">
+                    <div class="Phone Shit">
+                        <h1>о Нас</h1>
+                        <div>
+                            <svg width="105" height="1" viewBox="0 0 105 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.12561 0.415039H104.244" stroke="url(#paint0_linear_813_115)" stroke-width="0.7"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_813_115" x1="-13.3816" y1="-38.0849" x2="101.182" y2="9.19782" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.536458" stop-color="white"/>
+                                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p>nataly grad</p>
+                    </div>
+                    <div class="Shit2">
+                        <h1>наталья градова</h1>
+                        <h2>история бренда</h2>
+                        <p>Есть над чем задуматься: ключевые особенности структуры проекта являются только методом политического участия и в равной степени предоставлены сами себе. А также действия представителей оппозиции разоблачены.</p>
+                    </div>
+                    <div class="Phone darkenImageBG"></div>
                     <img src="./Img/Static/AboutUs.png" alt="">
                 </div>
             </div>
@@ -107,12 +146,17 @@
             </div>
             <div class="Principi">
                 <h1 class="PrincipiH1 TenorSans Size36">Принцип нашей работы</h1>
+                <h1 class="Phone TenorSans">Принцип работы</h1>
                 <div class="PrincipiCards">
                     <div class="PrincipiCard">
+                        <h1 class="Phone Roboto">пошив</h1>
+                        <h3 class="Phone OpenSans">3-4 недели</h3>
                         <h2 class="OpenSans Size24">Сроки пошива</h2>
                         <p class="OpenSans Weight300 Size18">3-4 недели</p>
                     </div>
                     <div class="PrincipiCard">
+                        <h1 class="Phone Roboto">доставка</h1>
+                        <h3 class="Phone OpenSans">1-2 недели</h3>
                         <h2 class="OpenSans Size24">Доставка</h2>
                         <p class="OpenSans Weight300 Size18">СДЭК<br>1-2 недели</p>
                     </div>
@@ -125,12 +169,14 @@
             <div class="DostupKCenam">
                 <div class="WhiteScreen"></div>
                 <div class="GreenScreen"></div>
-                <h1 class="TenorSans Size36">Получите дотуп к ценам</h1>
+                <h1 class="TenorSans Size36">Получите доступ к ценам</h1>
                 <img src="./Img/Static/AboutPrices.png" alt="">
                 <div class="BlockRegistr">
+                    <h5 class="Phone Roboto Weight400">Но сложившаяся структура организации однозначно определяет каждого участника как способного принимать собственные решения касаемо стандартных подходов.</h5>
                     <p class="OpenSans Weight400 Size18 BlockRegistrP">Но сложившаяся структура организации однозначно определяет каждого участника как способного принимать собственные решения касаемо стандартных подходов. Каждый из нас понимает очевидную вещь: постоянное информационно-пропагандистское обеспечение нашей деятельности говорит о возможностях первоочередных требований.</p>
                     <button class="OpenSans Size14">ЗАРЕГИСТРИРОВАТЬСЯ</button>
                 </div>
+                <button class="Phone Weight400 OpenSans main-letterspace">Зарегистрироваться</button>
             </div>
         </div>
         <footer class="Footer">
@@ -152,6 +198,45 @@
                     <h3>СОГЛАШЕНИЯ</h3>
                     <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
                     <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <footer class="FooterMobile text-center pt-20 pb-16 row-gap-33 flex flex-col">
+            <div class="flex flex-col row-gap-12">
+                <div class="flex flex-col items-center">
+                    <button class="max-width-fit btnFooter decoration-line">    
+                        <h1>Политика</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive" >
+                        <a class="decoration-line" href="">Согласие на обработку пнд</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter ">
+                        <h1>Компания</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <a href="About.html">О нас</a>
+                        <a href="Partners.html">партнеры</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter">
+                        <h1>Контакты</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <p>+7 012 345-67-89</p>
+                        <p>abvgd@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <div>
+                   <img height="11px" width="11px" src="Img/Static/WebsiteIcon.svg" alt=""> 
+                </div>
+                <div class="transform-uppercase">
+                    русский / english
                 </div>
             </div>
         </footer>

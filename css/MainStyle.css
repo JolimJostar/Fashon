@@ -344,6 +344,10 @@ button{
     height: 70px;
 }
 
+.h-full{
+    height: 100%;
+}
+
 .grid{
     display: grid;
 }
@@ -2162,7 +2166,7 @@ ul {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .Phone{
         display: block;
     }
@@ -2178,7 +2182,7 @@ ul {
         align-items: center;
         background: white;
         z-index: 9999;
-        height: 55px;
+        height: 62px;
     }
     .SMHolder{
         margin: 0;
@@ -2390,6 +2394,7 @@ ul {
     }
     .YourZakaz{
         width: 100%;
+        max-width: none;
     }
     .ZIInfo{
         display: none;
@@ -2403,5 +2408,218 @@ ul {
     .ZakazItem{
         padding-bottom: 25px;
         border-bottom: 1px solid #362B23;
+    }
+    .PersonalBlockText{
+        display: none;
+    }
+    .PersonalBlockImg{
+        position: relative;
+        height: 521px;
+        overflow: hidden;
+    }
+    .PersonalBlockImg > img {
+        height: 551px;
+        width: 100%;
+    }
+    .PersonalBlock{
+        background-color: unset;
+    }
+    .darkenImageBG{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.44);
+        z-index: 1;
+    }
+    .MainContentAbout{
+        padding: 62px 0 0 0;
+    }
+    .Shit{
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        text-transform: uppercase;
+    }
+    .Shit > h1{
+        color: rgba(255, 255, 255, 0.26);
+        font-weight: normal;
+        font-size: 54px;
+        line-height: 63px;
+        margin-bottom: 12px;
+    }
+    .Shit > div {
+        height: 1px;
+    }
+    .Shit > div > svg{
+        position: relative;
+        bottom: 14px;
+    }
+    .Shit > p{
+        margin-top: 7px;
+        font-size: 20px;
+        line-height: 23px;
+        color: white;
+    }
+    .AboutUs{
+        display: none;
+    }
+    .MainContentAbout{
+        height: unset;
+    }
+    .PersonalBlock{
+        width: 100%;
+        height: unset;
+    }
+    .PersonalBlockImg{
+        width: 100%;
+    }
+    .Shit2{
+        z-index: 2;
+        position: absolute;
+        width: 280px;
+        height: 136px;
+        left: 20px;
+        bottom: 30px;
+        color: white;
+    }
+    .Shit2 > h1{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+    }
+    .Shit2 > h2 {
+        margin-bottom: 20px;
+        font-size: 7px;
+        line-height: 10px;
+        text-transform: uppercase;
+    }
+    .Shit2 > p {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .Principi{
+        margin: 15px 0 0 0;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 161px;
+    }
+    .PrincipiH1{
+        display: none;
+    }
+    .PrincipiCard:nth-child(3){
+        display: none;
+    }
+    .PrincipiCard{
+        padding: 20px 20px 30px 20px;
+        width: 127px;
+        height: 86px;
+        color: white;
+        box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(215.64deg, #95AAA6 27.01%, rgba(149, 170, 166, 0) 141.94%);
+    }
+    .PrincipiCards{
+        width: 320px;
+        padding: 15px 18px;
+        bottom: unset;
+        height: unset;
+        position: relative;
+    }
+    .PrincipiCard > h2, .PrincipiCard > p{
+        display: none;
+    }
+    .Principi > h1{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+        margin-bottom: 15px;
+    }
+    .PrincipiCard > h1{
+        font-size: 9px;
+        line-height: 11px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .PrincipiCard > h3 {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    .DostupKCenam{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        height: unset;
+    }
+    .DostupKCenam > img{
+        width: 199px;
+        height: 123px;
+        position: relative;
+        top: 20px;
+        left: 40px;
+    }
+    .DostupKCenam > .BlockRegistr{
+        width: 200px;
+        height: 111px;
+        padding: 15px 12px 20px 12px;
+        position: relative;
+        top: -30px;
+        left: -40px;
+    }
+    .DostupKCenam > h1{
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        top: 0;
+        width: max-content;
+        position: relative;
+    }
+    .GreenScreen{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+    }
+    .WhiteScreen{
+        display: none;
+    }
+    .BlockRegistrP{
+        display: none;
+    }
+    .BlockRegistr > button {
+        display: none;
+    }
+    .BlockRegistr > h5{
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.185em;
+    }
+    .DostupKCenam > button {
+        font-size: 14px;
+        padding: 5px 30px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        background: #AFC4C0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
     }
 }
