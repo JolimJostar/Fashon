@@ -2738,4 +2738,33 @@ ul {
         letter-spacing: 0.1em;
         margin-bottom: 10px;
     }
+    .ZayavkaText{
+        border: none;
+        height: unset;
+        margin-top: 23px;
+        margin-bottom: 28px;
+    }
+    .ContactFormContakti{
+        width: unset;
+        top: 0;
+    }
+    .InputFields > div, .InputFields > div > input, .FlexSubscribeToNews > div{
+        width: 100%;
+    }
+    .InputFields > div > input{
+        width: 100%;
+    }
+    .ZayavkaText{
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        width: 100%;
+    }
+    .SubscribeToNews{
+        display: none;
+    }
+    #SubmitButton{
+        width: 100%;
+    }
 }
