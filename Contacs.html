@@ -17,8 +17,14 @@
 <body>
     <div id="Container">
         <div class="HeaderFull" id="HeaderFull">
-            <div class="SMHolder">
-                <div class="SearchBarHolder">
+            <div class="SMHolder z-999">
+                <button id="Burger">
+                    <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                    </svg>
+                </button>
+
+                <div class="SearchBarHolder Hidden">
                     <div class="SearchBar">
                         <input type="text" class="HeaderSearchInput OpenSans">
                         <button id="SearchButton">
@@ -28,6 +34,9 @@
                 </div>
                 <img id="Logo"src="./Img/Static/Logo.png" alt="">
                 <div class="Menu">
+                    <a href="Contacs.html" id="Partners">
+                        <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                    </a>
                     <a href="account.html" id="Account">
                         <img src="/Img/Static/Account.svg" alt="">
                     </a>
@@ -38,6 +47,15 @@
                         <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                         <p id="CartCount">5</p>
                     </a>
+                </div>
+            </div>
+            <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+                <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                    <a href="About.html">О нас</a>
+                    <a href="Collections.html">коллекции</a>
+                    <a href="Contacs.html">Контакты</a>
+                    <a href="Partners.html">сотрудничество</a>
+                    <a href="Blog.html">Блог</a>
                 </div>
             </div>
             <div class="NavigationHolder"> 
@@ -84,6 +102,7 @@
                 <p class="ContaktiImgText TenorSans Size24">КОНТАКТЫ</p>
             </div>
             <div class="FlexMain">
+                <h1 class="Phone TenorSans">Контакты</h1>
                 <div class="ContactiText OpenSans Weight300 Size18">
                     Мы с радостью ответим на любые вопросы по телефону или по электронной почте abvgd@pochta.ru <br><br><br>  
                     Если у вас есть вопросы где можно увидеть наши платья, воспользуйтесь нашим списком салонов партнеров. <br><br><br>  
@@ -158,6 +177,45 @@
                     <h3>СОГЛАШЕНИЯ</h3>
                     <a href="">Согласие&nbsp;на&nbsp;обработку ПНД</a>
                     <a href="">Политика&nbsp;конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <footer class="FooterMobile text-center pt-20 pb-16">
+            <div class="flex flex-col row-gap-12">
+                <div class="flex flex-col items-center">
+                    <button class="max-width-fit btnFooter decoration-line">    
+                        <h1>Политика</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive" >
+                        <a class="decoration-line" href="">Согласие на обработку пнд</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter ">
+                        <h1>Компания</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <a href="About.html">О нас</a>
+                        <a href="Partners.html">партнеры</a>
+                    </div>
+                </div>
+                <div>
+                    <button class="max-width-fit btnFooter">
+                        <h1>Контакты</h1>
+                    </button>
+                    <div class="flex flex-col row-gap-7 pt-11 items-center translate FPDropdown Unactive">
+                        <p>+7 012 345-67-89</p>
+                        <p>abvgd@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end mt-35 pr-30">
+                <div class="mr-6">
+                   <img height="11px" width="11px" src="Img/Static/WebsiteIcon.svg" alt=""> 
+                </div>
+                <div class="transform-uppercase">
+                    русский / english
                 </div>
             </div>
         </footer>
