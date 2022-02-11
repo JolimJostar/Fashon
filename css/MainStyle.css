@@ -2832,4 +2832,40 @@ ul {
     .CountryDropDown{
         margin-bottom: 20px;
     }
+    .ZakaziContent{
+        padding: 75px 20px 0 20px;
+        max-width: 100%;
+    }
+    .ZH1{
+        width: 100%;
+    }
+    .ZMain{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ZMain{
+        padding-left: 10px;
+    }
+    .ZMain > p:nth-last-child(-n + 2){
+        display: none;
+    }
+    .ZMain > p{
+        text-align: left;
+    }
+    .ZItem{
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ZItem > p:nth-last-child(-n + 3){
+        display: none;
+    }
+    .ZItem > a{
+        display: none;
+    }
+    .Exit{
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }

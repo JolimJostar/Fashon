@@ -16,8 +16,14 @@
 </head>
 <body>
     <div class="HeaderFull" id="HeaderFull">
-        <div class="SMHolder">
-            <div class="SearchBarHolder">
+        <div class="SMHolder z-999">
+            <button id="Burger">
+                <svg width="30" height="20" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1H18.5M0 7H18.5M0 4H18.5" stroke="black"/>
+                </svg>
+            </button>
+
+            <div class="SearchBarHolder Hidden">
                 <div class="SearchBar">
                     <input type="text" class="HeaderSearchInput OpenSans">
                     <button id="SearchButton">
@@ -27,6 +33,9 @@
             </div>
             <img id="Logo"src="./Img/Static/Logo.png" alt="">
             <div class="Menu">
+                <a href="Contacs.html" id="Partners">
+                    <img src="/Img/Static/WebsiteIcon.svg" alt="">
+                </a>
                 <a href="account.html" id="Account">
                     <img src="/Img/Static/Account.svg" alt="">
                 </a>
@@ -37,6 +46,15 @@
                     <img id="Cart" src="/Img/Static/Cart.svg" alt="">
                     <p id="CartCount">5</p>
                 </a>
+            </div>
+        </div>
+        <div class="MenuPhone height-vh absolute z-99 width-vw left-0 top-0 bg-white Hide translate">
+            <div class="flex flex-col row-gap-33 pl-30 mt-91">
+                <a href="About.html">О нас</a>
+                <a href="Collections.html">коллекции</a>
+                <a href="Contacs.html">Контакты</a>
+                <a href="Partners.html">сотрудничество</a>
+                <a href="Blog.html">Блог</a>
             </div>
         </div>
         <div class="NavigationHolder"> 
@@ -107,6 +125,7 @@
                 <p>Ждет отправки</p>
                 <p>Курьерская</p>
                 <p>20</p>
+                <a href=""><img src="/Img/Static/ZakazButton.svg" alt="" srcset=""></a>
             </div>
         </div>
     </div>
